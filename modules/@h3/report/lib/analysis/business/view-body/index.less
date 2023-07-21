@@ -1,0 +1,101 @@
+@import "~@h3/report/basics/styles/components.less";
+.h3-analysis-view-body{
+  height: calc(100% - 48px);
+  background:rgba(236,240,246,1);
+  position: relative;
+  &__contains {
+    height: 100%;
+    padding: 16px 8px 44px 16px;
+    position: relative;
+    .vertical-scrollbar();
+  }
+  &__item{
+    margin-bottom: 12px;
+    border:1px solid rgba(231,233,237,1);
+  }
+  &__btn {
+    position: absolute;
+    z-index: 9999;
+    bottom: 14px;
+    left: 50%;
+    margin-left: -56px;
+    height: 28px;
+    width: 112px;
+    background-color: #fff;
+    color: #2565F1;
+    border-radius: 14px;
+    box-shadow:0 2px 12px 0 rgba(52,94,184,0.15);
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .list-sort-wrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index:10;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  .list-sort-wrap--in {
+    .h3-element-list-sort {
+      opacity: 1;
+      transform: translate3d(0px, 0px, 0px);
+    }
+  }
+  .h3-element-list-sort {
+    transition: transform 0.3s, opacity 0.3s;
+    pointer-events: auto;
+    opacity: 0;
+    transform: translate3d(100%, 0px, 0px);
+  }
+}
+.h3-analysis-view-empty{
+  &__wrap {
+    width: 100%;
+    background: white;
+    border-radius:4px;
+    padding-bottom: 12px;
+    &-header {
+      height: 48px;
+      line-height: 46px;
+      padding-left: 16px;
+      position: relative;
+      display: flex;
+    }
+    &-title {
+
+    }
+    &-tip {
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      height: 45px;
+      width: 45px;
+    }
+    &-content {
+    }
+  }
+  &__footer{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-text {
+      font-size: 12px;
+      color: #777F8D;
+    }
+    &-button{
+      margin-top: 8px;
+      height: 28px;
+      border-radius: 14px;
+      line-height: 26px;
+      font-size: 12px;
+      color: white;
+      background:linear-gradient(45deg,rgba(37,82,255,1) 0%,rgba(16,178,255,1) 100%);
+      padding: 0 16px;
+    }
+  }
+
+}

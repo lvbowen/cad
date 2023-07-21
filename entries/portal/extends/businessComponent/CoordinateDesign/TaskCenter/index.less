@@ -1,0 +1,192 @@
+@import '../../../styles/public.module.less';
+.topContainer{
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+.top{
+  margin-left: -20px;
+  width: calc(100% + 40px);
+  height: 40px;
+  background-color: #004898;
+}
+.double-left {
+  color: white;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.taskCenterContainer{
+  //width: 89%;
+  margin: 0 auto;
+  background: white;
+  padding: @spacing-base;
+  //height: 100%;
+  //margin-top: -35px;
+}
+.doWrap,
+.projectWrap{
+  padding: 0 20px;
+  width: 100%;
+  background-color: #fff;
+}
+.doWrap{
+  //height: 47%;
+  //height: calc(100% - 40px);
+  height: 100%;
+  .toDoWrap,
+  .doneWrap{
+    position: relative;
+    height: 100%;
+    //width: 49.8%;
+    width: 100%;
+    .pagination{
+      .inline-block;
+      text-align: right;
+    }
+  }
+  .line-table-header {
+    .flex;
+    .flex-column;
+    .overflow-hidden;
+  }
+}
+.projectWrap{
+  
+  height: 52%;
+}
+.spaceVertical{
+  height: 1%;
+}
+
+.title{
+  height: 50px;
+  line-height: 50px;
+  h3{
+    margin-bottom: 0;
+  }
+  .titleContent{
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .titlExtra{
+    .titlExtraItem{
+      cursor: pointer;
+      color: #c9c9cb;
+      .titlExtra{
+        padding-right: 5px;
+      }
+      &:hover{
+        color: #2970ff;
+      }
+    }
+  }
+}
+.customizationTitle {
+  padding-left: 10px;
+}
+
+/deep/.tableRowClassNameOdd{
+  background-color: #f7f6f9;
+}
+/deep/.tableRowClassNameEven{
+  background-color: #fff;
+}
+.progress{
+  position: relative;
+  height: 15px;
+  width: 80%;
+  margin: 0 auto;
+  transform: skewX(-15deg);
+  border: 1px solid #fda83f;
+  .progressBar{
+    height: 100%;
+    width: 20%;
+    background-color: #fda83f;
+  }
+  .progressNum{
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: skewX(15deg) translateY(-50%);
+    font-size: 10px;
+    color: #fff;
+  }
+}
+
+/*Table style*/
+/deep/.ant-table-wrapper{
+  .ant-table {
+    .ant-table-body {
+      overflow-y: auto !important;
+      margin: 0;
+      //max-height: 580px !important;
+      &>table>.ant-table-tbody>tr>td {
+        padding: 9px 8px;
+        border-bottom: unset;
+        color: #717375;
+      }
+    }
+    //.ant-table-header {
+    //  min-height: auto;
+    //}
+    //.ant-table-hide-scrollbar {
+    //  margin-bottom: 0 !important;
+    //  padding: 0 !important;
+    //  overflow: hidden !important;
+    //}
+  }
+}
+/deep/.ant-table-small {
+  border: unset;
+  table {
+    border-collapse: collapse;
+  }
+  //.ant-table-thead {
+  //  &>tr{
+  //    background-color: #fff!important;
+  //  }
+  //  &>tr>th {
+  //    position: relative;
+  //    font-weight: 700;
+  //    border-right: 0 !important;
+  //    border-bottom: unset;
+  //    padding: 12px;
+  //    background-color: #f2f2f4!important;
+  //    color: #717375;
+  //    &:not(:last-child):after {
+  //      position: absolute;
+  //      top: 50%;
+  //      right: 0;
+  //      height: 100%;
+  //      width: 1px;
+  //      transform: translateY(-50%);
+  //      content: "";
+  //      border-right: 2px solid #fff;
+  //    }
+  //  }
+  //}
+}
+/deep/.ant-pagination{
+  margin: 10px 10px 2px 0;
+  display: flex;
+}
+//.floatLeft {
+//  float: left;
+//}
+//.floatRight {
+//  float: right;
+//}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}

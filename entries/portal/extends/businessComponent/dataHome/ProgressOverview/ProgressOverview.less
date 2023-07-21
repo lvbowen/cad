@@ -1,0 +1,128 @@
+.main{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  //padding: 0 1.9271vw 2.1875vw 1.9271vw;
+  display: flex;
+  flex-flow: column nowrap !important;
+  .top{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 19.1042vw;
+    margin-bottom: 1.0417vw;
+    .Progress{
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      width: 19.3229vw;
+      background: url("./img/k1_jdyx.png") no-repeat;
+      background-size: 100% 100%;
+      .descriptionData {
+        width: 100%;
+        div {
+          width: 65%;
+          height: 83px;;
+          padding: 10px 20px;
+          margin: 0 auto;
+          margin-bottom: 15px;
+          background: url("./img/k.png");
+          background-size: 100% 100%;
+          p {
+            color: #c3eaff;
+            font-size: 14px;
+            margin: 0;
+          }
+          h5 {
+            text-align: right;
+            :nth-child(1) {
+              font-size: 24px;
+              color: #fff;
+              font-weight: 700;
+              font-family: HuXiaoBo-NanShen;
+              margin-right: 5px;
+            }
+            :nth-child(2) {
+              font-size: 1vh;
+              color: #03eba1;
+            }
+          }
+        }
+      }
+    }
+    .Output{
+      width: 42.9167vw;
+      background: url("./img/k2_czwc.png") no-repeat;
+      background-size: 100% 100%;
+      .outputValue_progress {
+        // margin-bottom: 15px;
+        height: 25vh;
+        padding: 20px;
+        padding-top: 20px;
+        h4 {
+          margin-bottom: 20px;
+        }
+        span {
+          vertical-align: sup;
+          font-size: 14px;
+          color: #fff;
+        }
+        h5 {
+          margin-bottom: 5px;
+          text-align: left;
+          color: #fff;
+          font-size: 13px;
+        }
+      }
+    }
+    .status{
+      width: 31.8229vw;
+      background: url("./img/k3_jdzt.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  .bottom{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 23.0833vw;
+    width: 98vw;
+    background: url("./img/k4_cpfx.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.gennerl_title{
+  width: 16.9792vw;
+  margin-top: 0.9896vw;
+  margin-left: 0.9375vw;
+  height: 1.4583vw;
+  background: url(./img/title_bg.png) no-repeat ;
+  background-size: 100% 100%;
+  h4{
+    font-size: 18px;
+    font-family: Source Han Sans CN;
+    color: #FFFFFF;
+    line-height: 0.9896vw;
+    padding-left: 1.7708vw;
+  }
+}
+
+/deep/.el-progress {
+  display: inline-block;
+  width: 80%;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+/deep/.el-progress-bar__outer {
+  border-radius: 0;
+}
+/deep/.el-progress-bar__inner {
+  border-radius: 0;
+}
+/deep/.el-progress.is-success .el-progress-bar__inner {
+  background-color: #00da8e;
+}
+/deep/.el-progress.is-warning .el-progress-bar__inner {
+  background-color: #f1b500;
+}

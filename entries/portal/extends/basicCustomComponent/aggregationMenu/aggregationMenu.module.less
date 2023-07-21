@@ -1,0 +1,103 @@
+@import (reference) "../../../../../modules/@cloudpivot/flow-center/src/components/pc/menu/style/index.less";
+
+.folderMenuIcon{
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  vertical-align: middle;
+  &>img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+}
+
+.workflowMenu {
+  .ant-badge {
+    margin-left: @base4-padding-xs;
+    margin-top: -5px;
+    transform: scale(0.9);
+  }
+
+  .ant-badge-count {
+    box-shadow: none;
+  }
+
+  .ant-menu-dark .ant-menu-inline.ant-menu-sub .ant-menu-item {
+    padding-left: 70px !important;
+
+    & > a {
+      font-size: 13px;
+    }
+  }
+
+  /deep/ .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+    background-color: unset;
+
+    a {
+      color: white !important;
+
+      .icon {
+        margin-right: @base4-padding-xs;
+      }
+    }
+  }
+
+  .ant-menu-item > a {
+    & > .icon,
+    & > span {
+      height: 40px;
+      vertical-align: top !important;
+      max-width: calc(100% - 34px) !important;
+    }
+  }
+
+  .ant-menu-inline-collapsed-tooltip a {
+    color: white !important;
+
+    .icon {
+      margin-right: @base4-padding-xs;
+    }
+
+    .ant-badge {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+i[role-style=icon] {
+  margin-right: @base4-padding-xs;
+}
+
+div[class=ant-layout-sider-children] {
+  & > div[class=aside-top] {
+    height: 0 !important;
+    display: none !important;
+  }
+}
+
+//sliderMenu
+ul[class~=ant-menu-dark] {
+  background: #004898 !important;
+}
+ul[class~=ant-menu-sub]{
+  background: #004898 !important;
+}
+ul[class~=ant-menu-inline]{
+  box-shadow: none !important;
+}
+li[class~=ant-menu-item-selected]{
+  background: #012a67 !important;
+}
+//after
+aside[class=aside]{
+  background: #004898 !important;
+}
+div[class~=ant-layout-sider]{
+  background: #004898 !important;
+}
+
+//覆盖layerBackground
+aside[class~=aside-menu]{
+  background: none !important;
+}

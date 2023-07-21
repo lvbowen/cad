@@ -1,0 +1,136 @@
+.staticsHeader{
+  .infoImage{
+    padding-right: 10px;
+    vertical-align: text-top;
+  }
+  .headerTitle{
+    font-size: 0.9375vw;
+    font-family: "Source Han Sans CN";
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 2.5vw;
+  }
+}
+.staticsContents{
+  padding: .7813vw 1.5625vw;
+  background-color: #FFFFFF;
+  &>:not(:last-child){
+    margin-bottom: 1.5625vw;
+  }
+}
+.contentTile{
+  margin-bottom: .5208vw;
+  .contentTileContent{
+    font-size: .7813vw;
+    font-family: "Source Han Sans CN";
+    font-weight: bold;
+    color: #666666;
+  }
+}
+.staticsContent{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  .staticsContentItem{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 12.9688vw;
+    height: 4.2708vw;
+    background: #F8FAFA;
+    border-radius: 2px;
+    .staticsContentItemText{
+      padding-left: 1.3021vw;
+      h4{
+        font-size: 1.1458vw;
+        font-family: Arial;
+        font-weight: 400;
+        color: #000000;
+        margin-bottom: 0;
+      }
+      p{
+        font-size: .625vw;
+        font-family: "Source Han Sans CN";
+        color: #666666;
+        margin-bottom: 0;
+      }
+    }
+    .staticsContentItemImage{
+      margin-right: 1.1979vw;
+      width: 2.8646vw;
+      height: 2.8646vw;
+      border-radius: 50%;
+    }
+  }
+}
+.lineChartWrap{
+  height: 18.75vw;
+  .lineChart{
+    height: calc(100% - 2.1875vw);
+  }
+}
+.yearSelect{
+  width: 110px;
+  margin-right: .5208vw;
+}
+.departmenSelect{
+  width: 149px;
+}
+/deep/.ant-select-enabled:focus,
+/deep/.ant-select-enabled:hover{
+  .suffixIcon{
+    color: #2970FF;
+  }
+} 
+.archive{
+  background: url("../../../../src/assets/extends/CoordinateDesign/ProjectStatics/archive.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.aborted{
+  background: url("../../../../src/assets/extends/CoordinateDesign/ProjectStatics/aborted.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.paused{
+  background: url("../../../../src/assets/extends/CoordinateDesign/ProjectStatics/paused.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.running{
+  background: url("../../../../src/assets/extends/CoordinateDesign/ProjectStatics/running.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.total{
+  background: url("../../../../src/assets/extends/CoordinateDesign/ProjectStatics/total.png") no-repeat center;
+  background-size: 100% 100%;
+}
+
+.chartsContent{
+  height: 220px;
+  width: 100%;
+  .pieCharts{
+    width: 22%;
+    height: 100%
+  }
+  .barCharts{
+    width: 78%;
+    height: 100%
+  }
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}

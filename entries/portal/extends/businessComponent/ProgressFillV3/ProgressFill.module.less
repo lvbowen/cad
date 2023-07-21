@@ -1,0 +1,396 @@
+@import (reference) "../../styles/theme.less";
+
+@filterSize: 32px;
+
+@leftContainerW: 21.197vw;
+@leftContainerSearch: 16.5vw;
+@middleContainerW: 46.875vw;
+@middleContainerSearch: 0vw;
+@rightContainerW: 18.333vw;
+@rightContainerSearch: 0vw;
+
+.icon {
+  width: 100%;
+  height: 100%;
+
+  & > svg {
+    height: 100%;
+  }
+
+  & > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.filterBtn {
+  .flex;
+  width: @filterSize;
+  height: @filterSize;
+  background-color: #FFFFFF;
+  border: 1px solid #ACBBD8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filterContainer {
+  top: 215px !important;
+  left: 1775px !important;
+
+  & div[class=ant-tooltip-arrow]::before {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  & div[role=tooltip] {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  & .filterTip {
+    .flex;
+    flex-direction: column;
+    padding: 1px;
+
+    & span {
+      color: rgba(102, 102, 102, 1);
+      cursor: pointer;
+      margin-bottom: 3px;
+      padding: 2px 3px;
+    }
+
+    & span:last-of-type {
+      margin-bottom: 0;
+    }
+
+    & span[role=filterActive] {
+      background-color: #1890FF;
+      color: #FFF;
+    }
+  }
+}
+.filterContainers {
+  top: 215px !important;
+  left: 595px !important;
+
+  & div[class=ant-tooltip-arrow]::before {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  & div[role=tooltip] {
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  & .filterTip {
+    .flex;
+    flex-direction: column;
+    padding: 1px;
+
+    & span {
+      color: rgba(102, 102, 102, 1);
+      cursor: pointer;
+      margin-bottom: 3px;
+      padding: 2px 3px;
+    }
+
+    & span:last-of-type {
+      margin-bottom: 0;
+    }
+
+    & span[role=filterActive] {
+      background-color: #1890FF;
+      color: #FFF;
+    }
+  }
+}
+
+.main {
+  .flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  .flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+
+  & > span:first-of-type {
+    font-size: 16px;
+    font-family: Source Han Sans CN, serif;
+    font-weight: 400;
+    color: #0A0A0A;
+    margin-left: 6px;
+  }
+}
+
+.goBack {
+  .flex;
+  height: 17px;
+  align-items: center;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.mainContainer {
+  .flex;
+  flex: 1;
+  overflow: hidden;
+
+  & > section:first-of-type {
+    width: @leftContainerW;
+    margin-right: 10px;
+  }
+
+  & > section:nth-child(2) {
+    //width: @middleContainerW;
+    transition: all .3s;
+    margin-right: 10px;
+  }
+
+  & > section:last-of-type {
+    overflow: hidden;
+    //width: @rightContainerW;
+    flex: 1;
+  }
+}
+
+.container {
+  .commonCard;
+
+  & > article {
+    padding: 22px;
+    .flex;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+}
+
+.optNav {
+  .flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+
+  & > *:nth-child(2) {
+    margin-left: auto;
+  }
+
+  & > button {
+    margin-right: 10px;
+  }
+}
+
+.searchInput {
+  width: @leftContainerSearch;
+
+  & > span[class~=ant-input-wrapper] {
+    width: 90% !important;
+  }
+
+  & button {
+    width: 36px;
+    padding: 0;
+  }
+
+  & i[class~=anticon-search] {
+    transform: scale(1.5);
+  }
+}
+
+.tableSearch {
+  .searchInput;
+}
+
+.progressBar {
+  .flex;
+  transition: all .3s;
+  border-radius: 7px;
+  height: 15px;
+  width: 90%;
+  margin: auto;
+  background-color: red;
+
+  font-size: 12px;
+  color: #FFF;
+
+  & .minPercent {
+    width: 13% !important;
+  }
+
+  & > div {
+    transition: all .3s;
+    .flex;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: black;
+
+    & > span {
+      margin-top: -1px;
+    }
+  }
+}
+
+.detailSubmit {
+  height: 26px !important;
+  background-color: #2970FF !important;
+  border-radius: 4px !important;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.planDetailContainer {
+  & > nav {
+    .flex;
+    align-items: center;
+    margin-bottom: 23px;
+
+    & > i {
+      .flex;
+      margin-right: 5px;
+    }
+
+    & > span {
+      font-size: 14px;
+      font-family: Source Han Sans CN, serif;
+      font-weight: 400;
+      color: #666666;
+    }
+  }
+
+  & > nav:nth-of-type(2) {
+    margin-top: 12px;
+  }
+
+  & aside {
+    .flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    & > span {
+      min-width: 48%;
+      max-width: 48%;
+      font-size: 12px;
+      font-family: Source Han Sans CN, serif;
+      font-weight: 300;
+      color: #666666;
+    }
+
+    & > .singleValue {
+      max-width: 100%;
+    }
+
+    & > span:nth-child(2) {
+      margin-left: auto;
+    }
+  }
+
+  & .planDetailRow {
+    .flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 19px;
+
+    & > span {
+      width: 90px;
+      font-size: 12px;
+      font-family: Source Han Sans CN, serif;
+      font-weight: 300;
+      color: #595959;
+    }
+
+    & span[class=ant-calendar-picker] {
+      width: 100%;
+    }
+    & span[class=ant-input-group-wrapper] {
+      width: 70%;
+    }
+
+    & div[class~=ant-select] {
+      width: 100%;
+    }
+  }
+
+  & .oneKeyDone {
+    background-color: #2970FF !important;
+    height: 36px;
+    border-radius: 6px;
+    border: 1px solid #E9E9E9;
+  }
+}
+
+.show {
+  width: @rightContainerW;
+  z-index: 13;
+}
+
+.middle {
+  width: @middleContainerW;
+}
+
+.hide {
+  width: 0px;
+  border: none !important;
+}
+
+.full {
+  width: 100%;
+  //flex:1;
+}
+
+.optionSpan {
+  .flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 100%;
+  padding-left: 4px !important;
+  padding-right: 5px !important;
+  margin-left: 19px;
+}
+
+.deActive {
+  color: rgba(10, 10, 10, 0.3) !important;
+  border-bottom: none;
+}
+
+.active {
+  border-bottom: 1px solid #2970FF;
+}
+
+span[role=done] {
+  color: rgba(0, 197, 103, 1);
+}
+
+span[role=onGoing] {
+  color: rgba(239, 183, 13, 1);
+}
+
+span[role=notStarted] {
+  color: rgba(255, 113, 117, 1);
+}
+
+.mask {
+  position: absolute;
+  z-index: 12;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(25, 25, 25, 0.1);
+}
+
+.hint {
+  background-color: #ffd034;
+}

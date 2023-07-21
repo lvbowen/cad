@@ -1,0 +1,193 @@
+@import (reference) "../../styles/theme.less";
+
+.main {
+  .flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  .flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+
+  & > span:first-of-type {
+    font-size: 16px;
+    font-family: Source Han Sans CN, serif;
+    font-weight: 400;
+    color: #0A0A0A;
+    margin-left: 6px;
+  }
+}
+
+.mainContainer {
+  .flex;
+  flex: 1;
+  overflow: hidden;
+
+  & > section:first-of-type {
+    width: 100%;
+  }
+}
+
+.container {
+  .commonCard;
+
+  & .optNav {
+    .flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+
+    & > button {
+      margin-right: 10px;
+    }
+
+    & > button:first-of-type {
+      margin-left: auto;
+    }
+
+    & > button:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  & > nav > .optBtn {
+    margin-right: 10px;
+    .flex;
+    align-items: center;
+    cursor: pointer;
+
+    & > i {
+      margin-right: 5px;
+    }
+  }
+
+  & > nav > .optBtn:first-of-type {
+    margin-left: auto;
+  }
+
+  & > nav > .optBtn:last-of-type {
+    margin-right: 20px;
+  }
+
+  & > article {
+    padding: 22px;
+    .flex;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+}
+
+.pagination {
+  margin-top: auto !important;
+  margin-left: auto !important;
+}
+
+.progressBar {
+  .flex;
+  transition: all .3s;
+  border-radius: 7px;
+  height: 15px;
+  width: 90%;
+  margin: auto;
+  background-color: red;
+
+  font-size: 12px;
+  color: #FFF;
+
+  & .minPercent {
+    width: 13% !important;
+  }
+
+  & > div {
+    transition: all .3s;
+    .flex;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: black;
+
+    & > span {
+      margin-top: -1px;
+    }
+  }
+}
+
+span[role=done] {
+  color: rgba(0, 197, 103, 1);
+}
+
+span[role=onGoing] {
+  color: rgba(239, 183, 13, 1);
+}
+
+span[role=notStarted] {
+  color: rgba(255, 113, 117, 1);
+}
+
+.fillDetailModal {
+
+  & div[class=ant-modal]{
+    top: 35%;
+  }
+
+  & div[class=ant-modal-header]{
+    border:none;
+    padding-bottom: 0;
+  }
+
+  & div[class=ant-modal-title] {
+    font-size: 12px;
+    font-family: Microsoft YaHei, serif;
+    font-weight: bold;
+    color: #064897;
+  }
+
+  & div[class=ant-modal-body] {
+    .flex;
+    flex-direction: column;
+  }
+
+  & .fillDetailModalNav {
+    font-size: 12px;
+    font-family: Microsoft YaHei, serif;
+    font-weight: bold;
+    color: #666666;
+    margin-bottom: 27px;
+  }
+
+  & .fillDetailModalPercent {
+
+  }
+
+  & .modalOption {
+    margin-top: 15px;
+    .flex;
+
+    & > button {
+      height: 32px;
+      border-radius: 16px;
+    }
+
+    & > button:first-of-type {
+      margin-left: auto;
+      margin-right: 24px;
+      background-color: #2970FF;
+      border: 1px solid #2970FF;
+      color: #FFF;
+    }
+
+    & > button:last-of-type {
+      border: 1px solid #D3DBEE;
+      color: #94BBE7;
+    }
+  }
+}

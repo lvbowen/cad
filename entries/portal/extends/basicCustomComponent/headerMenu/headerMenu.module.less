@@ -1,0 +1,145 @@
+@import (reference) "../../../../../modules/@cloudpivot/flow-center/src/components/pc/menu/style/index.less";
+@import (reference) "../../styles/theme.less";
+
+@iconRight: 10px;
+@headerMenuRight: 50px;
+@mainRight: @headerMenuRight - @iconRight;
+
+.main {
+  display: flex;
+  margin-right: @mainRight - 20px;
+  align-items: center;
+  height: 64px;
+  
+  &::after {
+    content: "";
+    display: flex;
+    width: 1px;
+    height: 30px;
+    background-color: rgba(234, 237, 243, 1);
+    //position: absolute;
+    //left: -101px;
+    //top: 17px;
+  }
+  
+  .eachMenu {
+    cursor: not-allowed;
+    display: flex;
+    margin-right: @iconRight + 20px;
+    & > span{
+      color: rgba(255,255,255,0.4);
+      margin: auto;
+      font-size: 16px;
+      font-family: Source Han Sans CN;
+      font-weight: 400;
+      color: #FFFFFF;
+    }
+  }
+  
+  .eachMenu:last-child{
+    margin-right: @iconRight !important;
+  }
+  
+  .icon {
+    display: flex;
+    margin-right: @iconRight;
+  }
+  
+  .dynamicHeader{
+    .flex;
+    align-items: center;
+    transition:all .3s;
+    & div{
+      & > span{
+        color: rgba(255,255,255,0.4);
+        margin: auto;
+        font-size: 16px;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+        color: #FFFFFF;
+      }
+    }
+  }
+  
+  &>aside:first-child{
+    height: 100%;
+    &>div{
+      height: 100%;
+    }
+  }
+}
+
+.activeMenu{
+  background-color: #012a67;
+}
+
+.GreenActive {
+  // text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  span {
+    font-weight: 700 !important;
+  }
+}
+
+.blueHover:hover {
+  background: #012a67;
+}
+.blueHover {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+.Green {
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .iconImg {
+    position: absolute;
+    top: 46px;
+    left: 83px;
+  }
+}
+.greenHover:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  font-weight: 700 !important;
+}
+
+.TecBlue {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  background: url("../../../src/components/shared/img/top_btn.png");
+  background-size: 100% 100%;
+  div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.TecBlue:hover {
+  background: url("../../../src/components/shared/img/top_btn_pre.png");
+  background-size: 100% 100%;
+}
+
+.TecBlueActive {
+  background: url("../../../src/components/shared/img/top_btn_pre.png");
+  background-size: 100% 100%;
+}

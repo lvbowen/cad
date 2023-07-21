@@ -1,0 +1,15 @@
+{
+  "name": "h3-forms",
+  "version": "2.6.59",
+  "description": "",
+  "main": "index.ts",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "http://nexus.h3yun.com:8888/repository/npm-authine/"
+  },
+  "peerDependencies": {
+    "tslib": "1.14.1",
+    "rxjs": "^6.3.3"
+  },
+  "dependencies": {}
+}

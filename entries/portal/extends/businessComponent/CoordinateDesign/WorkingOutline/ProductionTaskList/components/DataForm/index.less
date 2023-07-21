@@ -1,0 +1,264 @@
+.collapseHeader {
+  height: 24px;
+  line-height: 24px;
+  background: url("../../../../../../../src/assets/extends/CoordinateDesign/ProductionTaskList/title.png") no-repeat;
+  background-size: 100% 100%;
+  .collapseHeaderIcon {
+    height: 100%;
+    padding-right: 10px;
+  }
+
+  .collapseHeaderTitle {
+    padding-left: 22px;
+    padding-right: 60px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: #FFFFFF;
+  }
+  .subTitle{
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: #7DADEF;
+  }
+
+  .collapseHeaderLine {
+    &::after {
+      content: "";
+      margin-left: 20px;
+      border-left: 2px solid #797979;
+    }
+  }
+
+  .collapseHeaderNode {
+    em {
+      padding-left: 10px;
+      color: #67c73b;
+    }
+  }
+
+  .collapseHeaderItem {
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: #575859;
+    padding-left: 20px;
+
+    em {
+      padding-left: 10px;
+    }
+  }
+
+  .collapseHeaderHandle {
+    em {
+      color: #3873f6;
+    }
+  }
+  .collapseHeaderWorkflow {
+    em {
+      color: #f29d38;
+    }
+  }
+  .collapseHeaderTime {
+    em {
+      padding: 0 2px;
+      color: #E10404;
+    }
+  }
+}
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+.readonly{
+  font-size: .7292vw;
+  font-family: "Microsoft YaHei";
+  color: #585859;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+//collapse
+/deep/.ant-collapse{
+  position: relative;
+}
+/deep/.ant-collapse-item {
+  &:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .ant-collapse-header {
+    padding: unset!important;;
+  }
+
+  .ant-collapse-content-box {
+    margin-top: 3px;
+    background-color: #fff;
+    padding: 16px !important;
+    border-radius: 0px 0px 4px 4px;
+    border: 1px solid #E2EAFF;
+    box-shadow: 0px 4px 8px 0px rgba(125,173,239,0.1);
+    &:hover{
+      border: 1px solid #7DADEF;
+      box-shadow: 0px 4px 8px 0px rgba(125,173,239,0.3);
+      border-radius: 0px 0px 4px 4px;
+    }
+
+    .ant-form-item:last-child {
+      margin-bottom: unset;
+    }
+
+    .subItem:last-child {
+      margin-bottom: unset;
+    }
+  }
+}
+//form-item
+/deep/.ant-form-item {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  // .ant-form-item-label,
+  // .ant-form-item-control-wrapper {
+  //   display: inline-block;
+  // }
+  .ant-form-item-label {
+    width: 220px;
+    padding-left: 20px;
+    vertical-align: middle;
+    white-space: normal;
+    line-height: 20px;
+  }
+  .ant-form-item-control-wrapper {
+    width: calc(100% - 220px);
+  }
+}
+.rowFlexWrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  .rowFlexItem {
+    width: 47%;
+    min-height: 30px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+  }
+  .fullRowFlexItem{
+    width: 100%;
+    min-height: 30px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+  }
+}
+
+/deep/ .ant-form-item-control {
+  line-height: 30px;
+}
+/deep/.ant-form-item-label>label{
+  font-size: .7292vw;
+  font-family: "Microsoft YaHei";
+  color: #8B8C90;
+}
+/deep/.ant-form-item-label>label:not([class~='ant-form-item-required']){
+  &::before{
+    display: inline-block;
+    margin-right: 4px;
+    content: '';
+    width: 7px;
+    height: 14px;
+  }
+}
+
+.collapsepanel3{
+  /deep/.ant-input-number-input-wrap::after{
+    content: "万元";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: .0521vw .9375vw .0521vw .5208vw;
+    font-size: .7292vw;
+    font-family: "Microsoft YaHei";
+    color: #8B8C90;
+    border-left: 2px solid #C7C8CB;
+    
+  }
+  /deep/.ant-input-number-handler-wrap{
+    right: 3.3854vw;
+  }
+  /deep/.ant-input-number-input{
+    padding: 0 90px 0 11px;
+  }
+}
+
+/deep/.collapsepanel2{
+  .ant-form-item-label {
+    width: 130px;
+  }
+  .ant-form-item-control-wrapper {
+    width: calc(100% - 130px);
+  }
+}
+/deep/.collapsepanel3{
+  .ant-form-item-label {
+    width: 160px;
+  }
+  .ant-form-item-control-wrapper {
+    width: calc(100% - 160px);
+  }
+}
+/deep/.collapsepanel4{
+  .ant-form-item-label {
+    width: 160px;
+  }
+  .ant-form-item-control-wrapper {
+    width: calc(100% - 160px);
+  }
+}
+/deep/.collapsepanel5{
+  .ant-form-item-label {
+    width: 160px;
+  }
+  .ant-form-item-control-wrapper {
+    width: calc(100% - 160px);
+  }
+}
+/deep/.collapsepanel6{
+  .ant-form-item-label {
+    width: 160px;
+  }
+  .ant-form-item-control-wrapper {
+    width: calc(100% - 160px);
+  }
+}
+/deep/.scattered_contract_flag{
+  .ant-form-item-label {
+    width: 180px;
+  }
+  .ant-form-item-control-wrapper {
+    width: calc(100% - 180px);
+  }
+}
+.fileInfos{
+  cursor: pointer;
+  .fileInfo{
+    span,i:not(:last-child){
+      padding-right: 20px;
+    }
+  }
+}
+/deep/ul{
+  margin-bottom: unset;
+}

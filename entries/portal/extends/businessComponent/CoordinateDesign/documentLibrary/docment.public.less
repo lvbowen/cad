@@ -1,0 +1,32 @@
+@import '../../../styles/public.module.less';
+.document-preview {
+  .ant-modal {
+    width: 100% !important;
+    top: 0;
+    height:100%;
+    .ant-modal-header {
+      background-color: #EAE8E8;
+      .title {
+        font-weight: bold;
+        margin-left: @spacing-base;
+      }
+    }
+    .ant-modal-content {
+      .full-height;
+      .flex;
+      .flex-column;
+      .ant-modal-close-x {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .ant-modal-body {
+        .full-height;
+        .flex;
+        iframe {
+          height: calc(100% - 2 * @spacing-large);
+          width: 98%;
+        }
+      }
+    }
+  }
+}

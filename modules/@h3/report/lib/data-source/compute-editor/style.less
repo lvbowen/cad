@@ -1,0 +1,217 @@
+@import "~@h3/report/basics/styles/theme";
+@import "~@h3/report/basics/styles/components";
+
+@compute-operate-height: 24px;
+@compute-operate-padding: 6px;
+@compute-operate-height: 32px;
+@compute-operate-border-color: #d9d9d9;
+@compute-operate-func-item-hover-color: #F0F8FE;
+@compute-operate-capsule-number-color: #F4B700,rgba(244, 183, 0, .1);
+@compute-operate-capsule-date-color: #248AF9,rgba(36, 138, 249, .1);
+@compute-operate-capsule-string-color: #248AF9,rgba(36, 138, 249, .1);
+
+
+.hover() {
+}
+
+.h3-compute-editor {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #FFF;
+  font-size: 12px;
+  height: 470px;
+  width: 800px;
+  color: @report-font-color-base;
+
+  &__title {
+    flex: 0 0 40px;
+  }
+
+  &__formula {
+    display: flex;
+    flex: 0 0 180px;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid @compute-operate-border-color;
+    padding: 0 @compute-operate-padding @compute-operate-padding;
+    border-radius: 0 !important;
+
+    .h3-formula-editor {
+      flex: 1;
+    }
+  }
+
+  &__formula-header {
+    display: flex;
+    align-items: center;
+    flex: 0 0 @compute-operate-height;
+    background-color: #e8f4fe;
+    padding: @compute-operate-padding;
+    margin: 0 -@compute-operate-padding @compute-operate-padding;
+  }
+
+  &__operate {
+    display: flex;
+    flex: 0 0 250px;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  &__operate > div {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  &__formula, &__fields, &__func, &__func-list, &__doc {
+    flex: 1;
+    border: 1px solid @compute-operate-border-color;
+  }
+
+  &__fields-header,
+  &__func-header {
+    flex: 0 0 @compute-operate-height;
+    line-height: @compute-operate-height;
+  }
+  &__fields {
+     .vertical-scrollbar()
+  }
+  &__fields-warp {
+    flex: 0 0 220px;
+  }
+
+  &__func-warp {
+    flex: 0 0 150px;
+  }
+
+  &__doc-warp {
+    flex: 0 0 370px;
+    padding-top: @compute-operate-height;
+  }
+
+  &__fields-item {
+    display: flex;
+    align-items: center;
+    padding: 0 @compute-operate-padding;
+    height: 30px;
+    cursor: pointer;
+
+    label {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .capsule {
+      flex: 0 0 48px;
+      text-align: right;
+      cursor: pointer;
+
+      span {
+        padding: 0 @compute-operate-padding;
+        border-radius: @compute-operate-padding;
+      }
+
+      span.type-number {
+        color: extract(@compute-operate-capsule-number-color, 1);
+        background: extract(@compute-operate-capsule-number-color, 2);
+      }
+
+      span.type-date {
+        color: extract(@compute-operate-capsule-date-color, 1);
+        background: extract(@compute-operate-capsule-date-color, 2);
+      }
+
+      span.type-string {
+        color: extract(@compute-operate-capsule-string-color, 1);
+        background: extract(@compute-operate-capsule-string-color, 2);
+      }
+    }
+
+  }
+
+  &__fields-item:hover {
+    background: @compute-operate-func-item-hover-color;
+  }
+
+  &__func {
+    display: flex;
+    border: 0;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  &__func-search {
+    flex: 0 0 @compute-operate-height;
+
+    .ant-input {
+      font-size: 12px;
+      border-radius: 0;
+    }
+  }
+
+  &__func-list {
+    .vertical-scrollbar();
+    flex: 1;
+    border-top: 0;
+    .h3-menu-tree-item {
+      padding: 0 @compute-operate-padding;
+
+      > i {
+        transform: scale(0.7);
+        font-size: 10px;
+      }
+
+      .h3-menu-tree-item__word {
+        margin-left: 3px;
+      }
+
+      line-height: @compute-operate-height;
+      height: @compute-operate-height;
+    }
+
+    .h3-menu-tree__list .h3-menu-tree-item:hover {
+      background-color: @compute-operate-func-item-hover-color;
+    }
+
+    .h3-menu-tree-item--selected {
+      background: none;
+    }
+  }
+
+  &__func-list-item {
+    line-height: @compute-operate-height;
+    height: @compute-operate-height;
+    padding: 0 @compute-operate-padding;
+    cursor: pointer;
+  }
+
+  &__func-list-item:hover {
+    background-color: @compute-operate-func-item-hover-color;
+  }
+  &__doc{
+    display: flex;
+    flex-direction: column;
+  }
+  &__doc-title{
+    flex: 0 0 @compute-operate-height;
+    height: @compute-operate-height;
+    line-height: @compute-operate-height;
+    padding: 0 @compute-operate-padding;
+    border-bottom: 1px solid @compute-operate-border-color;
+  }
+  &__doc-content{
+    flex: 1;
+    padding: @compute-operate-padding;
+  }
+  .input-error {
+    border-color: #E64340;
+  }
+  .input-error:focus {
+    border-color: #E64340;
+    box-shadow: 0 0 0 2px rgba(230, 67, 64, 0.2);
+  }
+}

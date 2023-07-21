@@ -1,0 +1,31 @@
+@import '~@h3/report/basics/styles/utils';
+
+.h3-element-list-sort{
+  height: 100%;
+  width: 160px;
+  background-color:rgba(15, 28, 53, 0.25);
+  padding: 8px;
+  overflow: hidden;
+  overflow-y: auto;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width:144px;
+    height:100px;
+    background:rgba(255,255,255,1);
+    border-radius:2px;
+    margin-top: 8px;
+    padding: 4px 8px 8px;
+    user-select:none;
+  }
+  &__item:first-child{
+    margin-top: 0;
+  }
+  &__title{
+    font-size: 12px;
+    margin-bottom: 2px;
+    line-height: 20px;
+    color: #0F1C35;
+    .setEllipsisStyle();
+  }
+}

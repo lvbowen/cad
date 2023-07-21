@@ -1,0 +1,146 @@
+@import "~@h3/report/basics/styles/theme";
+@import "~@h3/report/basics/styles/icon";
+@import "~@h3/report/basics/styles/paint-coat";
+.h3-dashboard-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #F5F7F9;
+  color: @report-font-color-base;
+
+  &--full {
+    overflow: hidden;;
+  }
+  &__canvas {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  &__canvas--full {
+    overflow: hidden;
+  }
+  &__canvas--empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100px;
+    }
+    label {
+      margin-top: 12px;
+      font-size:14px;
+      color: #999999;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 0;
+    height: 250px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow:0 5.5px 27.5px 0 rgba(80,119,188,0.11);
+  }
+  &__item--full {
+    position: fixed;
+    transform:rotate(90deg);
+    transform-origin: 0 0;
+    width: 100vh !important;
+    height: 100vw !important;
+    top: 0;
+    left: 100vw !important;
+    margin: 0 !important;
+    z-index: 999;
+    border-radius: 0;
+    box-shadow: none;
+    .h3-report-chart{
+      border-radius: 0 !important;
+    }
+  }
+  .ios &__item--full {
+    width: calc(100vh - env(safe-area-inset-bottom)) !important;
+  }
+  &__item:last-child {
+    margin-bottom: 10px;
+  }
+
+  &__item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 44px;
+    height: 44px;
+    padding: 0 12px;
+
+    label {
+      font-size: 16px;
+      font-weight: bold;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+    }
+  }
+
+  .h3-report-chart {
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+  }
+
+  &__btns {
+    display: flex;
+    > &-item {
+      color: #999999;
+    }
+    > .h3-dashboard-mobile__btns-item + .h3-dashboard-mobile__btns-item {
+      margin-left: 17px;
+    }
+  }
+  .h3-scroll__axis--y, .h3-scroll__axis--warp-y {
+    width: 4px
+  }
+  .h3-scroll__axis--x, .h3-scroll__axis--warp-x {
+    height: 4px;
+  }
+
+  .h3-report-chart-view{
+    &>div:last-child{
+     transform: translateZ(10px);
+    }
+  }
+  &__filter {
+    &-entry{
+      position: fixed;
+      z-index:999;
+      right: 4px;
+      bottom: 34px;
+      width: 44px;
+      height: 44px;
+      line-height: 44px;
+      border-radius: 50%;
+      background-color: #107FFF;
+      text-align: center;
+      i {
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+    &-set{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 14px;
+      width: 14px;
+      border-radius: 50%;
+      background-color: #00D495;
+    }
+  }
+}
+.android{
+  &::before{
+    content: '';
+  }
+}

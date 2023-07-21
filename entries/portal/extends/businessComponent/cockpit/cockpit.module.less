@@ -1,0 +1,97 @@
+@import (reference) "../../../../../modules/@cloudpivot/flow-center/src/components/pc/menu/style/index.less";
+@import (reference) "../../styles/theme.less";
+
+@sysIcon:153px;
+
+.active{
+  background: url(../../../src/assets/extends/cockpitCardActive.png) no-repeat -33px -34px !important;
+  height: 375px !important;
+}
+
+.main{
+  .flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url("../../../src/assets/extends/cockpit.png") no-repeat;
+  background-size: 100% 100%;
+
+  .card{
+    .flex;
+    .standard(25.05px);
+    flex-direction: column;
+    align-items: center;
+    width: 265px;
+    height: 365px;
+    background: url("../../../src/assets/extends/cockpitCard.png") no-repeat -12px 0;
+    transition: all .3s;
+    cursor: pointer;
+    //background-size: 100% 100%;
+
+    .carContent{
+      .flex;
+      flex-direction: column;
+      //width: 153px;
+      align-items: center;
+      width: 175px;
+      height: 253px;
+      margin: auto;
+    }
+
+    .sysIcon{
+      width: @sysIcon;
+      height: @sysIcon;
+    }
+  }
+
+  &>.card:first-child{
+    margin-left: auto;
+  }
+  &>.card:last-child{
+    margin-right: auto;
+  }
+  /* .card:hover{
+    .active;
+  }*/
+
+
+
+  .cardSpan{
+    .flex;
+    align-items: center;
+    background: url("../../../src/assets/extends/cardName.png") no-repeat;
+    background-size: 100% 100%;
+
+    width: 170px;
+    height: 53px;
+    margin-top: 37px;
+    transition: all .3s;
+
+    &>span{
+      margin: auto;
+      font-size: 20px;
+      font-family: Microsoft YaHei;
+      font-weight: bold;
+      color: #D4E1F0;
+    }
+  }
+
+  .spanActive{
+    background: url("../../../src/assets/extends/cardNameActive.png") no-repeat;
+    background-size: 100% 115%;
+    width: 190px !important;
+    height: 67px !important;
+    margin-top: 28px !important;
+    padding-top: 8px;
+    &>span{
+      font-size: 24px;
+      font-family: Microsoft YaHei;
+      font-weight: bold;
+      color: #FFFFFF;
+    }
+  }
+
+
+}
+

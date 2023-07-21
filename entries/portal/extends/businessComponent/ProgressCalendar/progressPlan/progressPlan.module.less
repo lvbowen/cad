@@ -1,0 +1,315 @@
+@import (reference) "../../../../../../modules/@cloudpivot/flow-center/src/components/pc/menu/style/index.less";
+@import (reference) "../../../styles/theme.less";
+
+@dailyBorder: #00489869;
+
+.main {
+  .flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  //height: 100%;
+
+  .calendar {
+    .flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #FFF;
+    //width: 100%;
+    //height: 100%;
+
+    & > div[class=ant-fullcalendar-header] {
+      .flex;
+      justify-content: flex-end;
+
+      & > div[class~=ant-radio-group] {
+        display: none;
+      }
+    }
+  }
+
+  table[class=ant-fullcalendar-table] {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+
+    & > thead > tr {
+      //background-color: beige;
+      height: 60px;
+      padding-bottom: 5px;
+
+      & > th {
+        text-align: center;
+
+        & > span {
+          margin: auto;
+
+        }
+      }
+    }
+
+    & > tbody[class=ant-fullcalendar-tbody] {
+
+    }
+  }
+
+  div[class=ant-fullcalendar-calendar-body] {
+    .standardPadding(10px);
+  }
+
+  table[role=grid] {
+    & > thead {
+      & > tr > th {
+        border-left: 1px solid #F0F0F0;
+        border-right: 1px solid #F0F0F0;
+
+        & > span {
+          font-size: 24px;
+          font-family: Adobe Heiti Std, serif;
+          font-weight: bold;
+          color: #333333;
+          //line-height: 36px;
+        }
+      }
+
+      & > tr {
+        & > th:first-of-type {
+          border-left: none;
+        }
+
+        & > th:last-of-type {
+          border-right: none;
+        }
+      }
+    }
+
+    & > tbody {
+      & > tr:last-of-type {
+        & > td {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  tr[role=row] {
+    & > td:first-of-type {
+      border-left: none;
+    }
+
+    & > td:last-of-type {
+      border-right: none;
+    }
+  }
+
+  td[role=gridcell] {
+    width: 12.135vw;
+    height: 6.927vw;
+    border: 1px solid #f0f0f0;
+  }
+
+  div[class~=ant-fullcalendar-fullscreen]:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.daily {
+  .flex;
+  flex-direction: column;
+  //.standardPadding(10px);
+  //.standard(10px);
+  flex: 1;
+  //height: 116px;
+  //width: 233px;
+  //height: 135px;
+  //width: 12.135vw;
+  //height: 6.927vw;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  //margin-bottom: 4px;
+  //padding-bottom: 5px;
+  user-select: none;
+}
+
+.dailyContent {
+  .flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  //.standard(10px);
+  //.standardPadding(5px);
+  //border-top: 2px solid @dailyBorder;
+  cursor: pointer;
+  transition: background-color cubic-bezier(1, 1, 1, 1) .3s;
+
+  & > nav {
+    /*font-size: 14px;
+    font-weight: 400;
+    color: #c7c7c7;
+    padding-top: 8px;*/
+    font-size: 22px;
+    font-family: Adobe Heiti Std, serif;
+    font-weight: bold;
+    color: #666666;
+    display: flex;
+    justify-content: center;
+    margin: auto auto 20px;
+    //line-height: 36px;
+  }
+
+  & > aside {
+    /*margin-top: 15px;
+    color: #c7c7c7;
+    .standardPadding(4px);*/
+    font-size: 14px;
+    font-family: Adobe Heiti Std, serif;
+    font-weight: normal;
+    color: #666666;
+    display: flex;
+    justify-content: center;
+    margin-bottom: auto;
+  }
+}
+
+.dailyContent:hover {
+  //background-color: #77d9f833;
+  background-color: #4A8BF6;
+}
+
+.duringMonth {
+  /*& > nav {
+    font-size: 16px;
+    font-weight: 500;
+    color: #064897;
+  }
+
+  & > aside {
+    margin-top: 15px;
+    color: #000000;
+  }*/
+}
+
+.today {
+  //background-color: #77d9f833;
+  background-color: #4A8BF6;
+  color: #FFF;
+
+  & nav {
+    color: #FFF;
+  }
+
+  & span {
+    color: #FFF;
+  }
+
+  & > div:first-child {
+    //border-top-color: #2970ff;
+  }
+
+  & aside{
+    .flex;
+    font-size: 12px;
+  }
+}
+
+.moneyPanel {
+  .flex;
+  align-items: center;
+  height: 32px;
+  // position: absolute;
+  padding-left: 11px;
+  align-items: center;
+  // padding-top: 10px;
+
+  & > i:first-of-type {
+    .flex;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  & > aside {
+    margin-right: 10px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+
+.calendarHeader {
+  .flex;
+  width: 100%;
+  height: 2vw;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.calendarHeaderSpan {
+  font-size: 30px;
+  font-family: Arial, serif;
+  font-weight: bold;
+  color: #333333;
+  .standard(3.281vw);
+}
+
+.prevMonth {
+  width: 0;
+  height: 0;
+  border-top: 0.53vw solid transparent;
+  border-right: 0.63vw solid #064897;
+  border-bottom: 0.53vw solid transparent;
+  cursor: pointer;
+}
+
+.nextMonth {
+  width: 0;
+  height: 0;
+  border-top: 0.53vw solid transparent;
+  border-left: 0.63vw solid #064897;
+  border-bottom: 0.53vw solid transparent;
+  cursor: pointer;
+}
+
+.dailyBox{
+  width: 100%;
+  height: 100%;
+  .duringMonth {
+    height: 100%;
+    nav {
+      width: 100%;
+      height: 100%;
+      align-items: center;
+    }
+  }
+}
+
+.top{
+  position: absolute;
+  display: flex;
+  background-color: #4A8BF6;
+  overflow: hidden;
+}
+
+.moneyTips{
+  .flex;
+  flex-direction: column;
+  &>span:first-of-type{
+    .flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &>span:nth-of-type(2){
+    height: 16px;
+    display: inline;
+    text-align: center;
+    text-overflow:ellipsis;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+}

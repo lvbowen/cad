@@ -1,0 +1,141 @@
+
+.equipmentUsedContainer{
+  width: 100%;
+}
+
+.pageHeader{
+  margin-bottom: 10px;
+  .pageHeaderIcon{
+    color: #2970FF;
+    padding-right: 6px;
+    cursor: pointer;
+  }
+  .pageHeaderTitle{
+    font-size: 14px;
+    font-family: "Source Han Sans CN";
+    font-weight: 700;
+    color: #0A0A0A;
+  }
+}
+
+.top{
+  margin-bottom: 12px;
+  padding-bottom: 18px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  .body{
+    height: 346px;
+    padding: 23px 18px 0 18px;
+    .barChart{
+      position: relative;
+      height: 100%;
+      width: 70%;
+      .barChartTitle{
+        font-size: 14px;
+        font-family: "Source Han Sans CN";
+        color: #666666;
+      }
+      .barChartContent{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    .pieChart{
+      position: relative;
+      height: 100%;
+      width: 30%;
+      .pieChartTitle{
+        font-size: 14px;
+        font-family: "Source Han Sans CN";
+        color: #666666;
+      }
+      .pieChartContent{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+  
+}
+.bottom{
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  .bottomBody{
+    min-height: 37vh;
+    padding: 10px 24px 0 24px;
+  }
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clearfix:before, .clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after{
+  clear:both;
+  overflow:hidden;
+}
+.clearfix{
+  *zoom:1;
+}
+/deep/.ant-pagination-options{
+  vertical-align: top;
+}
+
+.title{
+  padding-left: 18px;
+  height: 42px;
+  line-height: 42px;
+  border-bottom: 1px solid #E8E8E8;
+  background-color: #F8FBFF;
+  .titleContent{
+    font-size: 14px;
+    font-family: "Source Han Sans CN";
+    font-weight: 700;
+    color: #0A0A0A;
+  }
+  .titleExtra{
+    .titleExtraTitle{
+      margin-right: 10px;
+    }
+    .titleExtraButton{
+      margin-right: 14px;
+    }
+  }
+}
+/*Table style*/
+/deep/.ant-table{
+  .ant-table-thead{
+    background-color: #EDEFF9;
+    // min-height:unset!important;
+    
+  }
+  .ant-table-body{
+    overflow-y: auto!important;
+  }
+  .ant-table-header{
+    min-height: auto;
+  }
+  .ant-table-hide-scrollbar{
+    margin-bottom: 0!important;
+    padding: 0!important;
+    overflow: hidden !important;
+  }
+  .evenRow{
+    background-color: #F8F9FE;
+  }
+  .oddRow{
+    background-color: #fff;
+  }
+}
+

@@ -1,0 +1,30 @@
+@import '../../../../styles/public.module.less';
+.collapseHeaderTitles {
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  margin: @spacing-base 0;
+  .line {
+    width: 4px;
+    height: 14px;
+    background-color: #1890ff;
+    margin-right: @spacing-base;
+  }
+}
+/deep/.collapsepanel3{
+  .ant-form-item-label {
+    text-align: left;
+  }
+}
+.ant-tag-checkable {
+  padding: 0 7px;
+  font-size: 12px;
+  line-height: 20px;
+  white-space: nowrap;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  margin-bottom: @spacing-base;
+}

@@ -1,0 +1,130 @@
+//antd 分页 适用各种尺寸 透明底色 （适用于深色背景）
+.pagnition-transparent{
+  /deep/ .ant-pagination-item-active {
+    font-weight: 500;
+    background: transparent;
+    color: white;
+    border-color: #2970ff;
+  }
+
+  /deep/ .ant-pagination-item {
+    color: #ffffff !important;
+    background-color: transparent;
+    //border: 1px solid #d9d9d9;
+  }
+
+  /deep/ .ant-table-pagination.ant-pagination {
+    float: right;
+    margin: 1px !important;
+  }
+
+  //表格页码-数字
+  /deep/ .ant-pagination-item a {
+    color: #ffffff;
+  }
+
+  //表格页码-数字-点击
+  /deep/ .ant-pagination-item-active a {
+    color: #2970ff;
+  }
+
+  //表格页码向前向后跳转
+  /deep/ .ant-pagination-item-link {
+    color: #ffffff;
+    background-color: transparent;
+  }
+
+  /deep/ .ant-pagination-item-ellipsis {
+    color: #ffffff;
+  }
+}
+
+
+//antd 树 适用各种尺寸 透明底色 （适用于深色背景）
+//树的高度在各自页面中另写
+.tree-transparent{
+  //树-展开图表变成白色
+  /deep/ .ant-tree-switcher-icon svg {
+    color: #ffffff;
+  }
+
+  /deep/ .ant-tree li .ant-tree-node-content-wrapper {
+    color: #ffffff !important;
+  }
+
+  //树-选择行-变色
+  /deep/ .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+    background-color: #3787f8;
+  }
+
+  /deep/ .ant-tree .ant-tree-node-content-wrapper:hover { background-color: #3787f8; }
+}
+
+//antd 表格 适用小尺寸 透明底色 （适用于深色背景bim等）
+.table-small-transparent{
+  /deep/ .ant-table {
+    border: 0;
+  }
+  /deep/ .ant-table-header {
+     min-height: 20px;
+  }
+  /deep/ .ant-table-tbody > tr:hover > td {
+    background: #558fab !important
+  }
+
+  /deep/ .ant-table-tbody > tr.ant-table-row-selected td {
+    background: transparent;
+    color: #ffffff;
+  }
+
+  /deep/ .ant-table-thead > tr > th {
+    //表头背景色
+    background-color: rgba(53, 130, 243, 0.2) !important;
+    padding: 8px 8px !important;
+    overflow-wrap: break-word;
+    border-bottom: 1px solid transparent;
+    color: rgba(248, 245, 245, 0.85);
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  ///deep/ .ant-table-body {
+  //  margin-top: 7px;
+  //}
+
+  /deep/ .ant-table-tbody > tr > td {
+    padding: 8px 8px !important;
+    border-bottom: 1px solid transparent;
+    color: #ffffff;
+  }
+
+  /deep/ .ant-table-fixed-header .ant-table-scroll .ant-table-header {
+    background-color: transparent;
+  }
+
+  /deep/ .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body {
+    position: relative;
+    background-color: transparent;
+  }
+
+  /deep/ .ant-table-placeholder {
+    position: relative;
+    z-index: 1;
+    margin-top: -1px;
+    padding: 4px 8px;
+    color: #ffffff;
+    font-size: 12px;
+    text-align: center;
+    background: transparent;
+  }
+  /deep/ .ant-table-fixed-header .ant-table-scroll .ant-table-header {
+    background-color: transparent;
+    overflow: hidden !important;
+  }
+  /deep/.ant-table-hide-scrollbar{
+    margin-bottom: 0!important;
+    padding: 0!important;
+    overflow: hidden !important;
+    // line-height: 1.7708vw!important;
+  }
+}

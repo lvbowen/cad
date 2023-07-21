@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="66px" viewBox="0 0 128 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>雷达图</title>
+    <g id="仪表盘" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="统计分析_拖拽排序配图" transform="translate(-83.000000, -505.000000)">
+            <g id="Group-34" transform="translate(67.000000, 39.000000)">
+                <g id="form2-copy-4" transform="translate(8.000000, 440.000000)">
+                    <g id="Group-5" transform="translate(8.000000, 26.000000)">
+                        <rect id="Rectangle-Copy-29" x="0" y="0" width="128" height="66"></rect>
+                        <g id="Group-41" transform="translate(10.000000, 27.000000)">
+                            <rect id="Rectangle-Copy-33" fill="#06D1A2" opacity="0.800000012" x="0" y="0" width="8" height="3"></rect>
+                            <g id="Group-40" transform="translate(12.000000, 0.000000)" fill="#B6BCC6">
+                                <rect id="Rectangle-Copy-36" x="0" y="0" width="16" height="1"></rect>
+                                <rect id="Rectangle-Copy-39" x="0" y="2" width="16" height="1"></rect>
+                            </g>
+                            <g id="Group-40-Copy" transform="translate(12.000000, 9.000000)" fill="#B6BCC6">
+                                <rect id="Rectangle-Copy-36" x="0" y="0" width="16" height="1"></rect>
+                                <rect id="Rectangle-Copy-39" x="0" y="2" width="16" height="1"></rect>
+                            </g>
+                            <rect id="Rectangle-Copy-34" fill="#78ACFF" x="0" y="9" width="8" height="3"></rect>
+                        </g>
+                        <g id="Group-38" transform="translate(47.000000, 3.000000)">
+                            <polygon id="Path-9" fill="#78ACFF" points="9.01973523 24.758 33 33 43 29.8487804 49.4240883 55 17.4832407 53.8981935"></polygon>
+                            <polygon id="Path-10" fill="#06D1A2" opacity="0.800000012" points="20.4239288 28.8786923 33 -1.05692958e-12 60.0064607 24 35.3312575 36.1093509 32 33"></polygon>
+                            <g id="Group-37" opacity="0.699999988" stroke="#DADCE5">
+                                <polygon id="Polygon" points="33 0 64.384865 22.8024392 52.3969133 59.6975608 13.6030867 59.6975608 1.61513496 22.8024392"></polygon>
+                                <polygon id="Polygon" points="33 11 53.9232434 26.2016261 45.9312756 50.7983739 20.0687244 50.7983739 12.0767566 26.2016261"></polygon>
+                                <polygon id="Polygon" points="33 23 42.5105652 29.9098301 38.8778525 41.0901699 27.1221475 41.0901699 23.4894348 29.9098301"></polygon>
+                                <polyline id="Path-5" points="33 -1.8189894e-12 33 33 13.6030867 59.6975608"></polyline>
+                                <polyline id="Path-7" points="52.3969133 59.6975608 33 33 64.1797965 23"></polyline>
+                                <line x1="1.96648143" y1="23" x2="33" y2="33" id="Path-8"></line>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,15 @@
+{
+  "name": "@h3/report",
+  "version": "3.2.27",
+  "main": "./dist/report.js",
+  "typings": "./types/index.d.ts",
+  "peerDependencies": {
+    "vue": "^2.6.11",
+    "@h3/awesome-ui": "^3.0.1",
+    "@h3/antd-vue": "^1.6.5",
+    "vuedraggable": "^2.23.2"
+  },
+  "publishConfig": {
+    "registry": "http://nexus.h3yun.com:8888/repository/npm-authine/"
+  }
+}

@@ -1,0 +1,144 @@
+.flex() {
+  display: flex;
+}
+
+.textEllipsis() {
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+
+.standard(@value) {
+  margin-left: @value;
+  margin-right: @value;
+}
+
+.standardPadding(@value) {
+  padding-left: @value;
+  padding-right: @value;
+}
+
+.noScrollbar() {
+  overflow: -moz-scrollbars-none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+.commonCard() {
+  .flex;
+  align-items: center;
+  flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  box-shadow: 0 0 7px 0 rgba(0, 72, 152, 0.1);
+  & > nav {
+    .flex;
+    align-items: center;
+    width: 100%;
+    height: 42px;
+    background: #F8FBFF;
+    border-bottom: 1px solid #E8E8E8;
+
+    & > span {
+      font-size: 14px;
+      font-family: Tahoma, Verdana, sans-serif;
+      font-weight: 400;
+      color: #333333;
+      padding-left: 19px;
+    }
+  }
+}
+
+.main {
+  .flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  .flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+
+  & > span:first-of-type {
+    font-size: 16px;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-weight: 400;
+    color: #0A0A0A;
+    margin-left: 6px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.mainContainer {
+  .flex;
+  flex: 1;
+  overflow: hidden;
+
+  & > section:first-of-type {
+    width: 100%;
+  }
+}
+
+.container {
+  .commonCard;
+
+  & > nav {
+    & > button:first-of-type {
+      margin-left: auto;
+    }
+
+    & > button {
+      margin-right: 10px;
+    }
+
+    & > button:last-of-type {
+      margin-right: 20px;
+    }
+    & >div[class~=ant-select] {
+      margin-right: 10px;
+    }
+  }
+
+  & .optNav {
+    .flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+
+    & > button {
+      margin-right: 10px;
+    }
+
+    & > button:first-of-type {
+      margin-left: auto;
+    }
+
+    & > button:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  & > article {
+    padding: 22px;
+    .flex;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+}
+
+span[role=activeLink] {
+  color: #63B2EE;
+  cursor: pointer;
+}

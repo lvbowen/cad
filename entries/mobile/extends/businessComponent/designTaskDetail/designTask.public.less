@@ -1,0 +1,69 @@
+@import '~@/styles/mixins.less';
+@import '~@/styles/common.less';
+.header {
+  .px2rem(padding, @spacing-large);
+  color: @font-color-base;
+  .px2rem(font-size, 32);
+  background-color: #004898;
+  .px2rem(height, 80);
+  > div {
+    margin: 0 auto;
+    font-weight: bold;
+  }
+}
+.sub-title {
+  .px2rem(font-size, 24);
+  .line {
+    width: 4px;
+    height: 14px;
+    background: #448DF1;
+    .px2rem(margin-right,@spacing-base)
+  }
+  .van-button {
+    .px2rem(margin-right,@spacing-base)
+  }
+  .sub-title-name {
+    color: #0D0D0D;
+    font-weight: 400;
+    font-family: Source Han Sans CN;
+  }
+}
+.form {
+  .px2rem(padding-left,@spacing-base + 4px);
+  .px2rem(padding-top,@spacing-medium);
+  .px2rem(padding-bottom,@spacing-medium);
+  >div {
+    .flex-center-align;
+    .px2rem(margin-bottom,@spacing-base);
+    >.flex:first-child {
+      .px2rem(margin-right,@spacing-base);
+    }
+  }
+  .form-label {
+    white-space: nowrap;
+    color: #969799;
+  }
+  .form-value {
+    color: #585859;
+    //white-space: nowrap;
+    /deep/ .ant-radio-group {
+      .ant-radio-disabled + span {
+        color: #585859;
+      }
+      .ant-radio-inner::after {
+        background-color: #1890ff !important;
+      }
+    }
+  }
+}
+.line-clamp {
+  overflow: hidden;				//溢出内容隐藏
+  text-overflow: ellipsis;		//文本溢出部分用省略号表示
+  display: -webkit-box;			//特别显示模式
+  -webkit-line-clamp: 2;			//行数
+  line-clamp: 2;
+  -webkit-box-orient: vertical;	//盒子中内容竖直排列
+}
+.nowrap {
+  white-space: nowrap;
+}

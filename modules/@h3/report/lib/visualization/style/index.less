@@ -1,0 +1,101 @@
+@import "~@h3/report/basics/styles/icon";
+.h3-report-i-btn{
+  color: #8893A7 !important;
+  &:hover{
+    color: #68758E !important;
+  }
+}
+.h3-report-i-btns{
+  display: inline-flex;
+  .h3-report-i-btn{
+    font-size: 12px;
+  }
+  .h3-report-i-btn + .h3-report-i-btn{
+    margin-left: 18px;
+  }
+}
+.report-easy-modules{
+  padding: 24px 24px 0;
+  position: relative;
+  &__header{
+    padding: 0 0 10px;
+    label{
+      color: #304265;
+      font-weight: bold;
+    }
+  }
+}
+
+.h3-report-easy-modal{
+  display: none;
+  top: 52px;
+  right: 0;
+  bottom: 0;
+  width: 590px;
+  position: fixed;
+  color: #304265;
+  z-index: 99;
+  transition:width .3s;
+  user-select: none;
+  &--full{
+    width: 100%;
+  }
+  &__mask{
+    display: none;
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: transform .3s;
+    background:rgba(255,255,255,1);
+    box-shadow:0 0 10px 0 rgba(222,228,241,1);
+    z-index: 2;
+  }
+  &__warp{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  &__title {
+    font-weight:500;
+    color:rgba(48,66,101,1);
+    .h3-report-i-btn{
+      margin-left: 11px;
+    }
+  }
+  &__header{
+    display: flex;
+    flex: 0 0 56px;
+    height: 56px;
+    align-items: center;
+    font-size:16px;
+    border-bottom:1px solid rgba(231,233,237,1);
+  }
+  &__close{
+    display: inline-flex;
+    align-items: center;
+    margin: 0 19px 0 43px;
+    font-size: 12px;
+  }
+  &__add{
+    color: #107FFF !important;
+    i {
+      font-size: 14px;
+      margin-right: 4px;
+      font-weight: bold;
+    }
+  }
+  &__body{
+    flex: 1;
+    overflow: hidden;
+  }
+  label{
+    margin-bottom: 0;
+  }
+}

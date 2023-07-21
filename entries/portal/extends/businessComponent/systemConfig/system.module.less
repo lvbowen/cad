@@ -1,0 +1,90 @@
+@import url('../../styles/public.module.less');
+//鼠标移入样式
+/deep/ .ant-table-tbody > tr:hover > td {
+  background: #daeef5 !important
+}
+
+/deep/ .ant-table-thead {
+  letter-spacing: 2px;
+}
+
+/deep/ .clickRowStyl {
+  background-color: #daeef5 !important;
+}
+
+.custom-style {
+  margin-bottom: @spacing-large;
+  border: 0 !important;
+  overflow: hidden;
+
+  /deep/ .ant-btn {
+    margin: @spacing-base 0 @spacing-base 0;
+  }
+  .inner {
+    margin: @spacing-base 0 @spacing-large 0;
+    >a {
+      margin-left:@spacing-large;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  .editable-row-operations a {
+    margin-right: 8px;
+  }
+}
+
+/deep/ .ant-collapse {
+  background-color: white;
+  .ant-collapse-header {
+    padding: 0 11px !important;
+    border-left: 4px solid #3071e2;
+    font-weight: bold;
+  }
+  .ant-collapse-content {
+    padding: @spacing-base 0;
+  }
+  .ant-collapse-borderless > .ant-collapse-item {
+    border: 0;
+  }
+  .ant-collapse > .ant-collapse-item {
+    border: 0;
+  }
+}
+
+._title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: @spacing-base;
+}
+.staff-selector-span-inner {
+  display: inline-block;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 1/2*@spacing-base @spacing-base;
+  .anticon {
+    padding-right: 1/4 *@spacing-base;
+  }
+  margin-bottom: 1/4 * @spacing-base;
+  margin-right: 1/2 * @spacing-base;
+}
+@common-font-weight: bold;
+.base-color {
+  color: #0E90FE;
+  font-weight: @common-font-weight;
+}
+
+.success-color {
+  color: #3BB141;
+  font-weight: @common-font-weight;
+}
+
+.warning-color {
+  color: #DE1037;
+  font-weight: @common-font-weight;
+}
+
+.cancel-color {
+  color: #778899;
+  font-weight: @common-font-weight;
+}

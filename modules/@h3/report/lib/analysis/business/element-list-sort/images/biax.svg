@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="66px" viewBox="0 0 128 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>双轴图</title>
+    <g id="仪表盘" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="统计分析_拖拽排序配图" transform="translate(-83.000000, -937.000000)">
+            <g id="Group-34" transform="translate(67.000000, 39.000000)">
+                <g id="form2-copy-8" transform="translate(8.000000, 872.000000)">
+                    <g id="Group-9" transform="translate(7.250000, 25.000000)">
+                        <rect id="Rectangle-Copy-29" x="0.75" y="1" width="128" height="66"></rect>
+                        <rect id="Rectangle-Copy-24" fill="#B6BCC6" x="0.75" y="66.5" width="128" height="1"></rect>
+                        <g id="Group-36" transform="translate(15.750000, 6.000000)" fill="#78ACFF">
+                            <rect id="Rectangle" x="0" y="25" width="8" height="36"></rect>
+                            <rect id="Rectangle-Copy-7" x="18.6" y="0" width="8" height="61"></rect>
+                            <rect id="Rectangle-Copy-25" x="37.2" y="16" width="8" height="45"></rect>
+                            <rect id="Rectangle-Copy-26" x="55.8" y="40" width="8" height="21"></rect>
+                            <rect id="Rectangle-Copy-27" x="74.4" y="54" width="8" height="7"></rect>
+                            <rect id="Rectangle-Copy-28" x="93" y="22" width="8" height="39"></rect>
+                        </g>
+                        <polyline id="Path-3" stroke="#06D1A2" stroke-width="2" points="10.75 12 37.0821365 12 59.95 36.7465069 80.55 16.8810201 101.15 57.0730185 121.75 20.5307141"></polyline>
+                        <rect id="Rectangle-Copy-30" fill="#B6BCC6" transform="translate(1.000000, 33.750000) rotate(-90.000000) translate(-1.000000, -33.750000) " x="-32" y="33.5" width="66" height="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,25 @@
+// @ts-noCheck
+export { default as arrow } from './assets/arrow.png';
+export { default as appIcon } from './assets/appIcon.png';
+export { default as uploadIcon } from './assets/uploadIcon.png';
+export { default as loadMore } from './assets/loadMore.png';
+export { default as save } from './assets/save.png';
+export { default as add } from './assets/add.png';
+export { default as edit } from './assets/edit.png';
+export { default as remove } from './assets/delete.png';
+export { default as upgrade } from './assets/upgrade.png';
+export { default as downgrade } from './assets/downgrade.png';
+export { default as zoomIn } from './assets/zoomIn.png';
+export { default as zoomOut } from './assets/zoomOut.png';
+export { default as IImport } from './assets/import.png';
+export { default as IExport } from './assets/export.png';
+export { default as goBack } from './assets/goBack.png';
+export { default as qbsDelete } from './assets/qbsDelete.png';
+export { default as qbsEdit } from './assets/qbsEdit.png';
+export { default as qbsFile } from './assets/qbsFile.png';
+export { default as doc } from './assets/doc.png';
+export { default as removeDoc } from './assets/removeDoc.png';
+export { default as title } from './assets/title.png';
+export { default as help } from './assets/help.png';
+export { default as filter } from './assets/filter.png';
+export { default as folder } from './assets/folder.png';

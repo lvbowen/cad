@@ -1,0 +1,219 @@
+@import (reference) '../../styles/theme.less';
+
+.main{
+  .flex;
+  flex:1;
+  flex-direction: column;
+
+  &>.bimNav{
+    position: fixed;
+    .flex;
+    width: 100vw;
+    height: 14.4vw;
+    background: url('../../../src/assets/extends/bimHeader.png') no-repeat;
+    background-size: 100% 100%;
+    color:#FFF;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.8vw;
+  }
+
+  & iframe{
+    border: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  ul[class~="ant-tree"] {
+    text-align: left;
+    font-size: 22px;
+    font-family: PingFang SC;
+    //font-weight: bold;
+    color: #fff;
+
+    span[class~="ant-tree-node-content-wrapper"] {
+      font-size: 18px;
+      font-family: PingFang SC;
+      font-weight: bold;
+      // color: #B5D9FF;
+      //line-height: 53px;
+    }
+
+    span[class~="ant-tree-node-content-wrapper"]:hover {
+      background: #0E79ED;
+      background-opacity: 0.2;
+    }
+
+    i[class~="anticon"] {
+      font-size: 26px !important;
+    }
+
+  }
+}
+
+.buildInfoCard{
+  position: fixed;
+  .flex;
+  flex-direction: column;
+  background-color: rgba(3,24,37,0.8);
+  z-index: 9;
+  width: 100vw;
+  height: 30vh;
+  //bottom: 13.06666vw;
+  bottom: -100vw;
+  transition: all .3s;
+  border-top: 1px solid #4A86D7;
+  padding: 3.33333vw;
+  &>nav{
+    .flex;
+    font-size: 4.8vw;
+    color:#fff;
+  }
+
+  &>ul[class~="ant-tree"] {
+    text-align: left;
+    font-size: 4.8vw;
+    font-family: PingFang SC;
+    height:25vh;
+    //font-weight: bold;
+    color: #fff;
+    overflow: auto;
+    line-height: 4.8vw;
+
+    span[class~="ant-tree-node-content-wrapper"] {
+      font-size: 4.8vw;
+      font-family: PingFang SC;
+      font-weight: bold;
+      // color: #B5D9FF;
+      //line-height: 53px;
+    }
+
+    span[class~="ant-tree-node-content-wrapper"]:hover {
+      background: #0E79ED;
+      background-opacity: 0.2;
+    }
+
+    i[class~="anticon"] {
+      font-size: 6vw !important;
+    }
+
+  }
+
+}
+
+.infoCardShow{
+  bottom: 13.06666vw;
+}
+
+.bimLoad{
+  position: fixed;
+  .flex;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  transition: all .3s;
+  width: 26.66666vw;
+  height: 26.66666vw;
+}
+
+.closeLoading{
+  opacity: 0;
+  display: none;
+}
+
+.detailList{
+  .flex;
+  flex-direction: column;
+  flex:1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {display: none}
+  margin-top: 2.6666vw;
+  & span{
+    color:#fff;
+  }
+}
+
+.detail{
+  .flex;
+  flex-direction: column;
+  //only for test
+  //height: 350px;
+  &>nav{
+    .flex;
+    width: 100%;
+    //font-size: 2.4vw;
+    font-size: 4vw;
+    color:#fff;
+    &>span{
+      .flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    &>span:nth-child(1){
+      width: 35%;
+    }
+    &>span:nth-child(2){
+      width: 65%;
+    }
+  }
+}
+
+.eachItem{
+  .flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  &>span{
+    //font-size: 1.6vw;
+    font-size: 3.3vw;
+  }
+  &>span:nth-child(1){
+    width: 35%;
+    .textEllipsis;
+  }
+  &>span:nth-child(2){
+    width: 65%;
+    .textEllipsis;
+  }
+}
+
+ul[class~=slick-dots-bottom]{
+  display: none !important;
+}
+
+.noContainer{
+  margin: auto;
+}
+
+.buildInfoMask{
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 7;
+  background: transparent;
+}
+
+.showMask{
+  .flex;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: transparent;
+}
+
+.main {
+  span[class~="ant-tree-node-content-wrapper"] {
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #fff;
+    //line-height: 53px;
+  }
+}

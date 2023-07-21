@@ -1,0 +1,141 @@
+.container{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.main{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+  &>div[class~=mini-splitter]{
+    //background: red;
+    //border: 1px solid #E8E8E8;
+  }
+  & div[class=mini-splitter-border]{
+    //border: none;
+    border: 1px solid #E8E8E8;
+  }
+
+/*  & div[class=mini-supergrid-header]{
+    height: 60px !important;
+
+  }*/
+  & div[class=mini-supergrid-cells]{
+    &>div[class~=mini-supergrid-row]:nth-child(2n+1){
+      background: #F8F9FE;
+    }
+  }
+}
+
+.ganttTHead{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+div[class=mini-supergrid-editwrap] {
+  height: var(--miniTableRowH) !important;
+  & span{
+    height: calc(100% - 2px);
+  }
+}
+
+/*div[class=mini-splitter-border]{
+  border: none;
+}*/
+
+div[class~=mini-gantt-offday]{
+  background: #fff repeating-linear-gradient(30deg, rgba(171,171,171, 0.5), rgba(171,171,171,-0.5) 1px, transparent 0, transparent 3px);
+}
+
+/*div[class~=mini-gantt-line-v]{
+  background: #686868;
+}*/
+
+div[class=mini-menu]{
+  border-radius: 5px;
+}
+
+div[class=mini-menu-border]{
+  border:none;
+}
+
+div[class=mini-menu-inner]{
+  padding: 0;
+}
+
+div[class~=mini-menuitem]{
+  line-height: 25px;
+  font-family: Sans-serif,serif;
+}
+
+div[class~=mini-menuitem-hover]{
+  border:none;
+  background: #e5e5e5;
+  transition: all .3s;
+}
+
+span[class~=mini-buttonedit-button]{
+  background: none !important;
+  border:none !important;
+}
+span[class=mini-buttonedit-icon]{
+  //background: none !important;
+}
+
+div[class=mini-popup]{
+  border: none !important;
+  border-radius: 5px;
+}
+
+div[class=mini-calendar-headerInner]{
+  background: #FFF;
+}
+
+div[class=mini-calendar-footer]{
+  background: #FFF;
+}
+
+td[class=mini-calendar-header]{
+  border: none;
+}
+
+span[class=mini-calendar-tadayButton]{
+  border:none;
+  background: none;
+}
+
+span[class=mini-calendar-clearButton]{
+  border: none;
+  background: none;
+}
+
+.ganttViewItem{
+  //background: rgba(245,174,72,0.5);
+  background: #ccf5d3;
+  position: absolute;
+  border-radius: 30px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.finishPercent{
+  /*background: #F5AE48;*/
+  background: #6ed57f;
+  border-radius: 30px;
+  height: 100%;
+}
+
+.datePicker{
+  background: red;
+  display: none !important;
+}
+
+div[class=ant-modal-body]{
+  padding: 22px;
+}

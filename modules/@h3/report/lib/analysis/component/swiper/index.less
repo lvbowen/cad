@@ -1,0 +1,31 @@
+.h3-analysis-swiper{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  z-index: 9;
+  &__left,&__right{
+    margin: 0 16px;
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    background:rgba(255,255,255,1);
+    border-radius:24px;
+    border:1px solid rgba(217,217,217,1);
+    text-align: center;
+    cursor: pointer;
+    .iconfont{
+      color: #8893A7;
+      font-size: 14px;
+    }
+    &:hover{
+      background:rgba(240,247,255,1);
+      border:1px solid rgba(37,101,241,1);
+      transition: all .3s;
+      .iconfont{
+        color: #2565F1;
+      }
+    }
+  }
+}

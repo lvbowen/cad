@@ -1,0 +1,112 @@
+@import "~@h3/report/basics/assets/icon-3.0/iconfont.less";
+
+@transitionTime: .3s;
+
+.h3-analysis-model {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  height: 100%;
+  width: 590px;
+  color: #304265;
+  z-index: 99;
+  user-select: none;
+  transition: width @transitionTime;
+
+  &__fullscreen{
+    width: 100%;
+    .h3-analysis-view{
+      position: absolute;
+      right: 0;
+      z-index: -1;
+    }
+  }
+  &--window {
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+  &--animation {
+    transition: all @transitionTime;
+    transform:translate3d(100%, 0, 0);
+  }
+}
+.h3-analysis-view-wrap {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 590px;
+  border-radius:4px;
+  position: absolute;
+  z-index: 99;
+  border: 1px solid #DADCE5;
+  transition: transform @transitionTime;
+  user-select: none;
+}
+.h3-analysis-view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 590px;
+  position: relative;
+  color: #304265;
+  transition: transform @transitionTime;
+  > .h3-report-loading {
+    background-color: #ecf0f6;
+  }
+}
+.h3-analysis-design-wrap {}
+.h3-analysis-design {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: #FFFFFF;
+  &__body{
+    display: flex;
+    position: relative;
+    height: calc(100% - 48px);
+    .h3-analysis-chart-detail{
+      flex: 1;
+      height: 100%;
+      width: 100%;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: width @transitionTime;
+    }
+    .h3-analysis-chart-detail--edit{
+      width: calc(100% - 380px);
+      transition: all @transitionTime;
+    }
+  }
+}
+.h3-analysis-sort__pop{
+  .ant-popover-inner-content{
+    padding: 12px 4px 0 4px;
+  }
+}
+// 向右滑动
+.h3-report-slide-right{
+  transition: all @transitionTime !important;
+  transform: translate3d(-100%, 0, 0) !important;
+  transition-timing-function: ease-in !important;
+}
+// 向左滑动
+.h3-report-slide-left{
+  transition: all @transitionTime !important;
+  transform: translate3d(100%, 0, 0) !important;
+  transition-timing-function: ease-in !important;
+}
+
+// .slide-fade-enter-active {
+//   transition: all .3s ease;
+// }
+// .slide-fade-leave-active {
+//   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+// }
+.slide-fade-enter, .slide-fade-leave-to{
+  transform: translateX(100%);
+}
+

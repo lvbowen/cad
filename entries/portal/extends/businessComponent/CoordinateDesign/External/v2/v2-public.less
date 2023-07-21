@@ -1,0 +1,110 @@
+@import url('../../../../styles/public.module.less');
+.dark {
+  @dark-base-bg-color: #424242;
+  background: @dark-base-bg-color;
+  @dark-base-color: #FFFFFF;
+  color: @dark-base-color;
+  /deep/ .anticon {
+    color: @dark-base-color !important;
+  }
+  .ant-collapse{
+    background: @dark-base-bg-color;
+    color: @dark-base-color;
+  }
+  /deep/ .ant-input {
+    background: @dark-base-bg-color;
+    color: @dark-base-color;
+    &:hover {
+      border: 1px solid #707273;
+    }
+  }
+  /deep/ .ant-input-search-button {
+    background: linear-gradient(0deg, #F7F6F6, #D8D8D9) !important;
+    border: 1px solid #ACACAC !important;
+    color: #000000 !important;
+    .anticon {
+      color: #606266 !important;
+    }
+  }
+  /deep/ .ant-collapse {
+    .ant-collapse-header,.tree-title{
+      color: @dark-base-color;
+      &:hover {
+        color: #6F9FFF !important;
+      }
+    }
+    .designs {
+      background: #535353 !important;
+    }
+  }
+  .contacts {
+    border-bottom: 1px solid #F0F0F0;
+  }
+  .ant-btn {
+    color: @dark-base-color;
+  }
+  .ant-btn-primary[disabled]{
+    background-color: #1890ff !important;
+    border: none;
+  }
+  .bg-gray {
+    background-color: #858585 !important;
+    border: none;
+    &:hover {
+      background-color: #979191 !important;
+    }
+  }
+  .achievements {
+    >div {
+      .file-name {
+        color: @dark-base-color !important;
+      }
+      color: @dark-base-color !important;
+      background: @dark-base-bg-color !important;
+      .base-operate {
+        >div {
+          color: @dark-base-color !important;
+        }
+      }
+      .annotations .comment > a {
+        color: #6F9FFF !important;
+      }
+    }
+  }
+  .design-task-state {
+    background-color: #666666 !important;
+    color: #CCFFFF !important;
+  }
+  .content,.comment-title{
+    color: @dark-base-color !important;
+  }
+  .name:hover {
+    color: #6F9FFF !important;
+  }
+}
+//.light {
+//  @dark-base-bg-color: #FFFFFF;
+//  background: @dark-base-bg-color;
+//  @dark-base-color: #333333;
+//  color: @dark-base-color;
+//}
+.design-task-state {
+  background-color: rgb(0, 122, 120);
+  color: rgb(255, 199, 69);
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 1/8 * @spacing-large;
+  white-space: nowrap;
+  margin-right: 1/3 * @spacing-base;
+  margin-left: 1/3 * @spacing-base;
+}
+.anticon {
+  margin-right: @spacing-base;
+  font-size: 14px;
+  .btn-click-active;
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+  }
+}

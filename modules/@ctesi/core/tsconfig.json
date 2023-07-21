@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "jsxFactory": "VueTsxSupport",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "strictFunctionTypes": false,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "baseUrl": ".",
+    "allowJs": true,
+    "types": [
+      "webpack-env",
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost",
+      "es2020"
+    ]
+  },
+  "include": [
+    "node_modules/vue-tsx-support/enable-check.d.ts",
+    "declarations.d.ts",
+    "extends/**/*.ts",
+    "extends/**/*.tsx",
+    "extends/**/*.vue",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    //    "node_modules"
+    "node_modules/@cloudpivot/**/*",
+    "node_modules/h3-forms/**/*",
+    "node_modules/@h3/**/*",
+    "node_modules/h3-antd-vue/**/*",
+    "node_modules/h3-flow-drawer/**/*",
+    "node_modules/h3-mobile-vue/**/*",
+    "modules/h3-forms/**/*",
+    "modules/h3-flow-drawer/**/*",
+    "modules/h3-antd-vue/**/*",
+    "modules/h3-mobile-vue/**/*"
+  ]
+}

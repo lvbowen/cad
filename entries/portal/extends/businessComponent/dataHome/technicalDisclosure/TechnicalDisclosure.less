@@ -1,0 +1,212 @@
+.empty{
+  text-align: center;
+}
+.main{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  //padding: 0 1.9271vw 2.1875vw 1.9271vw;
+  display: flex;
+  flex-flow: row nowrap !important;
+  justify-content: space-between;
+}
+.leftContainer {
+  background:url(./img/k1_jdpx.png) no-repeat;
+  background-size: 100% 100%;
+  width: 19.2708vw;
+  height: 43.2813vw;
+  .shebeiList {
+    padding: 20px;
+    padding-left: 50px;
+    color: #fff;
+    height: 55vh;
+    overflow-y: auto;
+  
+    div {
+      margin-bottom: 20px;
+      height: 26px;
+      cursor: pointer;
+    }
+    img {
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    span {
+      // color: rgba(255, 255, 255, 0.8);
+      color: #fff;
+      vertical-align: middle;
+      font-size: 14px;
+    }
+    div:hover span {
+      color: #0071fe;
+    }
+  }
+}
+
+.rightContainer{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 75.8333vw;
+  height: 43.25vw;
+}
+
+.titleCard{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:space-between;
+  height: 4.375vw;
+  margin-bottom: 1.1458vw;
+  .card{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 16.5625vw;
+    height: 4.375vw;
+    background: url(./img/data_bg.png) no-repeat;
+    background-size: 100% 100%;
+    img{
+      width: 3.3333vw;
+      height: 3.3333vw;
+      margin-top: 0.7813vw;
+      margin-left: 2.6042vw;
+      
+    }
+    /deep/.ant-statistic{
+      margin-top: 0.8854vw;
+      margin-left: 7.8125vw-2.6042vw-3.3333vw;
+    }
+  }
+}
+
+.statistics{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 1.1458vw;
+  .chart{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 31.8229vw;
+    height: 15.1042vw;
+    background: url("./img/k2_qdtj.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .progress{
+    width: 42.9167vw;
+    height: 15.1042vw;
+    background: url("./img/k3_jdtj.png") no-repeat;
+    background-size: 100% 100%;
+    .outputValue_progress {
+      margin-bottom: 15px;
+      height: 25vh;
+      padding: 20px;
+      padding-top: 10px;
+      h4 {
+        margin-bottom: 10px;
+      }
+      span {
+        vertical-align: sup;
+        font-size: 14px;
+      }
+      h5 {
+        margin-bottom: 5px;
+        text-align: left;
+        color: #fff;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.detail{
+  display: flex;
+  flex-flow: column nowrap;
+  height: 21.3542vw;
+  width: 75.8333vw;
+  background: url("./img/k4_jdmx.png") no-repeat;
+  background-size: 100% 100%;
+  .detailTable{
+    padding: 1.0417vw;
+  }
+}
+
+
+.gennerl_title{
+  width: 16.9792vw;
+  margin-top: 0.9896vw;
+  margin-left: 0.9375vw;
+  height: 1.4583vw;
+  background: url(./img/title_bg.png) no-repeat ;
+  background-size: 100% 100%;
+  h4{
+    font-size: 18px;
+    font-family: Source Han Sans CN;
+    color: #FFFFFF;
+    line-height: 0.9896vw;
+    padding-left: 1.7708vw;
+  }
+}
+
+/deep/.el-progress {
+  display: inline-block;
+  width: 80%;
+  margin-right: 10px;
+  margin-bottom: 25px;
+}
+/deep/.el-progress-bar__outer {
+  border-radius: 0;
+}
+/deep/.el-progress-bar__inner {
+  border-radius: 0;
+}
+/deep/.el-progress.is-exception .el-progress-bar__inner {
+  background-color: rgb(255, 0, 66);
+}
+/deep/.el-progress.is-success .el-progress-bar__inner {
+  background-color: rgb(0, 197, 103);
+}
+/deep/.el-table {
+  color: #fff;
+  background-color: rgba(53, 130, 243, 0.1); // transparent;
+  border: 1px solid rgba(119, 171, 210, 1);
+}
+/deep/.el-table th {
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid #5073a1;
+  background: rgba(53, 130, 243, 0.2);
+  font-weight: 800;
+  font-size: 14px;
+  text-align: center;
+}
+/deep/.el-table tr,
+/deep/.el-table td {
+  font-size: 13px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid #5073a1;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+}
+/deep/.el-table--striped .el-table__body tr.el-table__row--striped td {
+  background: rgba(53, 130, 243, 0.2);
+}
+/deep/.el-table .warning-row {
+  background: rgba(234, 237, 243, 0.1);
+}
+/deep/.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background: rgba(233, 237, 243, 0.3) !important;
+}
+/deep/.el-input__inner {
+  height: 28px;
+  line-height: 28px;
+  background: rgba(17, 65, 125, 0.72);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+}
+/deep/.el-input__icon {
+  height: 28px;
+  line-height: 26px;
+  color: #fff;
+}

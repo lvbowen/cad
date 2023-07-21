@@ -1,0 +1,239 @@
+@import "~@h3/report/basics/styles/components.less";
+@import "~@h3/report/basics/styles/theme.less";
+@import "~@h3/report/basics/assets/icon/iconfont.less";
+
+.h3-data-source-list {
+  display: flex;
+  height: 100%;
+  color: @report-font-color-base;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 240px;
+    background-color: #FFF;
+    box-shadow: 0 0 8px 0 @report-shadow-color;
+    overflow: hidden;
+  }
+
+  .h3-menu-tree {
+    &.sortable-ghost {
+      opacity: .2;
+    }
+  }
+
+  .h3-menu-tree-item {
+    .setting {
+      display: none;
+      height: 16px;
+      line-height: 16px;
+      color: @report-icon-gray-color;
+      font-size: 12px;
+    }
+
+    &:hover {
+      .setting {
+        display: block;
+      }
+    }
+  }
+
+  &__right {
+    flex: 1;
+    overflow: hidden;
+    background-color: @report-background-color;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+
+    &-empty{
+      text-align:center;
+      
+      &-img{
+        display:inline;
+      }
+      p{
+        color:#8893A7;
+        padding: 24px 0 0;
+        font-size:14px;
+      }
+    }
+
+    &-wrap {
+      background-color: #fff;
+      width: 100%;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-name {
+      color: @report-font-color-base;
+      font-size: 18px;
+    }
+
+    &-content {
+      flex: 1;
+      overflow: hidden;
+
+      .ant-tabs {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .ant-tabs-content {
+        flex: 1;
+        overflow: hidden;
+        margin-top:20px;
+        height:100%;
+      }
+
+      .ant-tabs-tabpane{
+        height:100%;
+        justify-content: center;
+      }
+
+      .ant-tabs-bar {
+        margin: 0;
+      }
+
+      .ant-tabs-tabpane {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+
+      .ant-table-body {
+        .bothway-scrollbar()
+      }
+
+      .ant-table-thead>tr>th {
+        background: rgba(244, 248, 254, 1);
+
+        div {
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      .ant-table-thead>tr>th,
+      .ant-table-tbody>tr>td {
+        max-width: 190px;
+        height: 38px;
+        padding: 8px;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    &-table {
+      flex: 1;
+      width: 100%;
+      .bothway-scrollbar()
+    }
+
+    &-tip {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      height: 48px;
+      line-height: 48px;
+      color: @report-font-color-dark;
+    }
+  }
+
+  .ant-table-header {
+    background: none;
+  }
+
+  &__left-header {
+    flex: 0 0 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+
+    label {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .h3yun_All+.h3yun_All {
+      margin-left: 16px;
+    }
+  }
+
+  &__list {
+    flex: 1;
+    padding: 0 12px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .ant-dropdown-menu-item {
+    min-width: 100px;
+  }
+
+  & * {
+    .scrollbarStyle();
+  }
+}
+
+.h3-data-source-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  color: @report-font-color-base;
+
+  >label {
+    flex: 0 0 40px;
+    height: 40px;
+    line-height: 40px;
+    color: @report-font-color-dark;
+  }
+
+  &__list {
+    flex: 0 0 250px;
+    height: 250px;
+    overflow: hidden;
+    overflow-y: auto;
+    .scrollbarStyle();
+  }
+}
+
+.h3-data-source-move {
+  &__wrap {
+    height: 330px;
+    display: flex;
+  }
+
+  &__section~&__section {
+    border-left: 1px solid #E0E3E9;
+    padding-left: 24px;
+  }
+
+  &__section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tree {
+    flex: 1;
+    .vertical-scrollbar()
+  }
+
+}

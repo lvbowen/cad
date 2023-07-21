@@ -1,0 +1,120 @@
+.designResultContainer{
+  padding: 10px;
+  height: 100%;
+}
+
+.collapseHeader {
+  height: 20px;
+  .collapseHeaderIcon {
+    height: 100%;
+    padding-right: 10px;
+  }
+  .collapseHeaderTitle {
+    height: 24px;
+    width: 100%;
+    padding: 3px 0 0 22px ;
+    background:url("../../../../../src/assets/extends/CoordinateDesign/ProductionTaskList/title.png") no-repeat;
+    background-size: 100% 100%;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .collapseHeaderLine {
+    &::after {
+      content: "";
+      margin-left: 20px;
+      border-left: 2px solid #797979;
+    }
+  }
+}
+/deep/.ant-collapse-item {
+  border-bottom: 0!important;
+  .ant-collapse-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #f3f3f3!important;
+  }
+
+  &:not(:last-child)::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+  }
+  .ant-collapse-content {
+    width: 100%;
+  }
+  .ant-collapse-content-box {
+    background-color: #fff;
+    padding: 16px !important;
+
+  }
+
+  .ant-collapse-content::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: #fff;
+  }
+}
+.bts {
+  margin-bottom: 8px
+}
+.inputSearch{
+  width: 350px;
+  //padding-bottom: 20px;
+}
+/deep/.tableTheadBackGroundColor{
+  //background-color: #ccffff!important;
+  //border-color: #d7d7d7!important;
+  .ant-table-column-title{
+    font-weight: 500!important;
+  }
+}
+/*Table style*/
+/deep/.ant-table-wrapper{
+  .ant-table {
+    .ant-table-body {
+      overflow-y: auto !important;
+      margin: 0;
+      &>table>.ant-table-tbody>tr>td {
+        padding: 9px 8px;
+        // border-bottom: unset;
+        border-color: #d7d7d7;
+        color: #717375;
+      }
+    }
+    .ant-table-header {
+      min-height: auto;
+      border-bottom: 1px solid #d7d7d7;
+      tr>th{
+        border-bottom: unset;
+      }
+    }
+    .ant-table-hide-scrollbar {
+      margin-bottom: 0 !important;
+      // padding-right: 6px !important;
+      overflow: hidden !important;
+      //background-color: #ccffff;
+      border-radius: 0;
+    }
+  }
+}
+/deep/.ant-table-small {
+  border-color: #d7d7d7;
+}
+.floatLeft {
+  float: left;
+}
+/deep/.ant-table-row-level-0{
+  //background-color: rgb(204,228,255);
+}
+/deep/ .ant-table-body {
+  font-weight: bold;
+  .ant-table-thead>tr>th {
+    background-color: rgba(171,208,254,0.5) !important;
+
+  }
+}

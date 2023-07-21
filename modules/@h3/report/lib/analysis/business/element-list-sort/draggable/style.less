@@ -1,0 +1,21 @@
+.h3-x-draggable{
+  transform:translate(0,0);
+  img{
+    -webkit-user-drag: none;
+  }
+  &__item {
+    cursor: move;
+  }
+  &__drag{
+    position: fixed;
+    border: 2px #2565F1 solid;
+    box-shadow: 0 0 0 2px rgba(37, 101, 241, 0.25);
+    border-radius:2px;
+    pointer-events: none;
+    margin: 0 !important;
+    z-index: 99999;
+  }
+  &__ghost{
+    opacity: 0.5;
+  }
+}

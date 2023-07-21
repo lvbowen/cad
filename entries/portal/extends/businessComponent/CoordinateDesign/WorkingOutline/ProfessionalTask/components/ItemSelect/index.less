@@ -1,0 +1,39 @@
+.title{
+  color: #66cc33;
+}
+.designButtons{
+  .designButton:not(:last-child){
+    margin-right: 10px;
+  }
+  .line::after{
+    content: "";
+    border-left: 1px solid #e1e1e1;
+    margin-right: 10px;
+  }
+}
+.optionsWrap{
+  display: flex;
+  flex-flow: row wrap;
+  /deep/.option{
+    width: 33%;
+    margin-left: unset;
+  }
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}

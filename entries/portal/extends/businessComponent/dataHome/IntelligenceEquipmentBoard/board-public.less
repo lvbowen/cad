@@ -1,0 +1,289 @@
+@import "../../../styles/public.module.less";
+@ai-list-item-margin: @spacing-large;
+.card-medium {
+  //height: 39.55767%;
+  height: calc(45.2% - 2 * @spacing-medium);
+  margin: @spacing-medium 0;
+
+  .medium-left {
+    padding: @spacing-base;
+    background-image: url("img/ai/k1_ai.png");
+    position: relative;
+    .bg-full;
+    width: 21.23287%;
+    >div:nth-child(2){
+      background-image: url("img/pic_k1.png");
+      background-size: contain;
+    };
+    >div:nth-child(3){
+      background-image: url("img/pic_k2.png");
+      background-size: contain;
+    }
+    .card-info {
+      height: 33.5714%;
+      width: 65.7526%;
+      background-repeat: no-repeat;
+      margin: @spacing-medium auto;
+      .second {
+        font-size: 20px;
+        color: #23FFFC;
+        span {
+          margin-right: @spacing-base;
+        }
+      }
+      .person {
+        font-size: 20px;
+        color: #23B9FF;
+        span {
+          margin-right: @spacing-base;
+        }
+      }
+    }
+    .lately-time {
+      position: absolute;
+      right: @spacing-base;
+      top:  @spacing-base;
+      .anticon {
+        margin-right: @spacing-base;
+      }
+    }
+  }
+  .medium-right {
+    padding: @spacing-base;
+    background-image: url("img/ai/medium.png");
+    .bg-full;
+    width: 52.5159%;
+  }
+}
+.card-bottom {
+  background-image: url("img/bottom.png");
+  .bg-full;
+  height: 48.43568%;
+  padding: @spacing-large;
+  .bottom-left {
+    width: 58%;
+    >div {
+      margin-bottom: @spacing-base;
+    }
+    .card-kind;
+    .ai-list {
+      overflow: auto;
+      .ai-list-item {
+        width: 50%;
+        display: inline-block;
+        cursor: pointer;
+        >img {
+          width: 100%;
+        }
+        .time {
+          img {
+            margin-right: @spacing-base;
+          }
+        }
+        .ai-list-item-inner {
+          padding:0  @spacing-base 0 @spacing-large;
+        }
+        .active-item {
+          color: #409eff;
+        }
+      }
+      .ai-list-item-double {
+        margin-right: @ai-list-item-margin;
+        width: calc(50% - @ai-list-item-margin);
+      }
+      .ai-list-item-odd {
+        margin-left: @ai-list-item-margin;
+        width: calc(50% - @ai-list-item-margin);
+        padding-right: @spacing-large;
+      }
+    }
+  }
+  .bottom-right {
+    @bottom-left-margin:@spacing-large;
+    width: calc(42% - @bottom-left-margin);
+    margin-top: @spacing-base;
+    margin-left: @bottom-left-margin;
+    border-left: 1px solid #909399;
+    img {
+      width: calc(100% - @spacing-large);
+      margin-left: @spacing-large;
+      .full-height;
+    }
+  }
+}
+.card-kind {
+  .kind {
+    display: inline-block;
+    margin-right: @spacing-large;
+    margin-bottom: @spacing-base;
+    width: 100px;
+    height: 34px;
+    background: rgba(35, 185, 255, 0.12);
+    border: 1px solid #909399;
+    text-align: center;
+    line-height: 34px;
+    color: #909399;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .active-kind {
+    color: #23FFF2;
+    border: 1px solid #23B9FF;
+  }
+}
+.card-pie {
+  background-image: url("img/ai/k2_ai.png");
+  .bg-full;
+  width: 27.5114%;
+  margin: 0 @spacing-large;
+  padding: @spacing-base;
+}
+.card-lists {
+  background-image: url("img/lbfh/k3_lbfh.png");
+  .bg-full;
+  width: calc(72.5% - @spacing-large);
+  padding: @spacing-base;
+  .lists {
+    overflow: auto;
+    .list-item {
+      width: 50%;
+      display: inline-block;
+      .inner {
+        width: 76.8402%;
+        padding: @spacing-base;
+        background: rgba(3, 94, 255, 0.1);
+        border: 1px solid rgba(10, 67, 188, 0.56);
+        margin: @spacing-base auto;
+        >div{
+          margin-bottom: 2px;
+        }
+        .time {
+          color: #04e9ff;
+          margin-right: @spacing-medium;
+        }
+      }
+    }
+    .list-item-double {
+      margin-right: @ai-list-item-margin;
+      width: calc(50% - @ai-list-item-margin);
+    }
+    .list-item-odd {
+      //margin-left: @ai-list-item-margin;
+      //width: calc(50% - @ai-list-item-margin);
+      width:calc(50%);
+      padding-right: @spacing-large;
+      border-left: 1px solid #666;
+    }
+  }
+}
+.card-table(@column-1,@column-2,@column-3,@column-4,@column-5,@column-6,@column-7,@column-8,@column-9) {
+  .base-flex {
+    >div {
+      display: inline-block;
+    }
+    >div:nth-child(1) {
+      width: @column-1;
+      padding-left: @spacing-medium;
+    }
+    >div:nth-child(2) {
+      width: @column-2;
+    }
+    >div:nth-child(3) {
+      width: @column-3;
+    }
+    >div:nth-child(4) {
+      width: @column-4;
+    }
+    >div:nth-child(5) {
+      width: @column-5;
+    }
+    >div:nth-child(6) {
+      width: @column-6;
+    }
+    >div:nth-child(7) {
+      width: @column-7;
+    }
+    >div:nth-child(8) {
+      width: @column-8;
+    }
+    >div:nth-child(9) {
+      width: @column-9;
+    }
+  }
+  .card-table-header {
+    .base-flex;
+    background: rgba(66, 150, 255, 0.5);
+    border: 1px solid #00BAFF;
+    border-radius: 2px;
+    margin-bottom: @spacing-base;
+  }
+  .card-table-list {
+    overflow: auto;
+    .card-table-content {
+      .base-flex;
+      padding: @spacing-base 0;
+      .indexs {
+        span {
+          border-radius: 4px;
+          display: block;
+          width: 20px;
+          height: 20px;
+          text-align: center;
+        }
+        .bg-red {
+          background-color: #F60511;
+        }
+        .bg-org {
+          background-color: #FF5E18;
+        }
+        .bg-ye {
+          background-color: #FBBB0B;
+        }
+        .bg-blue {
+          background-color: #3AA1FB;
+        }
+      }
+    }
+    .even {
+      background-color: rgba(66,150,255,0.15);
+    }
+  }
+}
+.card-medium-view-total {
+  background-image: url("./img/medium-1.png");
+  .bg-full;
+  .card-medium;
+  padding: @spacing-base;
+  >div:first-child {
+    position: relative;
+  }
+  .recent-time {
+    position: absolute;
+    right: @spacing-large;
+    top: @spacing-base;
+    .flex;
+    .flex-center-align;
+    .anticon {
+      margin-right: @spacing-base;
+    }
+  }
+  .total-view {
+    margin-right: 2 * @spacing-large;
+    &:first-child {
+      margin-left: @spacing-large;
+    }
+    color: #B4BCBF;
+    >img {
+      width: 102px;
+      height: 102px;
+      margin-right: @spacing-base;
+    }
+    .value {
+      color: #32EDFD;
+      font-size: 18px;
+      padding-top: @spacing-base;
+      margin-right: @spacing-base;
+      font-family: fantasy;
+    }
+  }
+}

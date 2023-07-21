@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="66px" viewBox="0 0 128 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>饼状图</title>
+    <g id="仪表盘" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="统计分析_拖拽排序配图" transform="translate(-83.000000, -397.000000)">
+            <g id="Group-34" transform="translate(67.000000, 39.000000)">
+                <g id="form2-copy-3" transform="translate(8.000000, 332.000000)">
+                    <g id="Group-4" transform="translate(8.000000, 26.000000)">
+                        <rect id="Rectangle" fill="#FFC42E" x="10" y="22" width="8" height="3"></rect>
+                        <rect id="Rectangle-Copy-20" fill="#B6BCC6" x="22" y="22" width="16" height="1"></rect>
+                        <rect id="Rectangle-Copy-37" fill="#B6BCC6" x="22" y="24" width="16" height="1"></rect>
+                        <rect id="Rectangle-Copy-35" fill="#B6BCC6" x="22" y="31" width="16" height="1"></rect>
+                        <rect id="Rectangle-Copy-38" fill="#B6BCC6" x="22" y="33" width="16" height="1"></rect>
+                        <g id="Group-40" transform="translate(22.000000, 40.000000)" fill="#B6BCC6">
+                            <rect id="Rectangle-Copy-36" x="0" y="0" width="16" height="1"></rect>
+                            <rect id="Rectangle-Copy-39" x="0" y="2" width="16" height="1"></rect>
+                        </g>
+                        <rect id="Rectangle-Copy-31" fill="#06D1A2" opacity="0.800000012" x="10" y="31" width="8" height="3"></rect>
+                        <rect id="Rectangle-Copy-32" fill="#78ACFF" x="10" y="40" width="8" height="3"></rect>
+                        <g id="Group-39" transform="translate(52.000000, 3.000000)">
+                            <path d="M54,32 C54,46.9116882 41.9116882,59 27,59 C12.0883118,59 0,46.9116882 0,32 C0,18.0478287 10.5826789,6.56737455 24.158988,5.14768616 C17.876712,5.81011375 12.237535,8.6415491 8,12.8825693 L8,12.8825693 L27,32 L54,32 Z" id="Combined-Shape" fill="#78ACFF"></path>
+                            <path d="M7.22753926,8.17451627 C12.1909578,3.22428962 19.0022199,0.12591567 26.5369688,0.00375120002 L27,0 L27,28 L7.22753926,8.17451627 Z" id="Path" fill="#FFC42E"></path>
+                            <path d="M58,28 C58,12.536027 45.463973,0 30,0 L30,28 L58,28 Z" id="Path" fill="#06D1A2" opacity="0.800000012"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

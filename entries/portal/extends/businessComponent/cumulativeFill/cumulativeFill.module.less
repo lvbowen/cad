@@ -1,0 +1,54 @@
+@import (reference) "../../../../../modules/@cloudpivot/flow-center/src/components/pc/menu/style/index.less";
+@import (reference) "../../styles/theme.less";
+
+.main{
+  .flex;
+  flex-direction: column;
+  flex:1;
+  background-color: #fff;
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  &>.nav{
+    .flex;
+    height: 30px;
+    font-size: 16px;
+    color: #012a67;
+    border-bottom: 1px solid #e8e8e8;
+    width: 100%;
+  }
+
+  &>main{
+    .flex;
+    flex:1;
+
+    &>.fillBlock{
+      .flex;
+      flex:1;
+      flex-direction: column;
+      width: 50%;
+      height: 100%;
+      justify-content: space-around;
+
+      &>aside{
+        .flex;
+        align-items: center;
+
+        & span{
+          //width: 50px;
+          width: 89px;
+          .textEllipsis;
+          margin-left: auto;
+          text-align: right;
+          font-size: 12px;
+        }
+
+        & input{
+          width: 150px;
+          margin-left: 10px;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}

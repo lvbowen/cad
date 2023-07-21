@@ -1,0 +1,74 @@
+@import (reference) "../../../../../modules/@cloudpivot/flow-center/src/components/pc/menu/style/index.less";
+@import (reference) "../../styles/theme.less";
+
+.main {
+  .flex;
+  flex-direction: column;
+
+  .content {
+    .flex;
+    //flex:1;
+    width: 100vw;
+    height: 65px;
+    padding-right: 80px;
+    align-items: center;
+    //background: url("../../../src/assets/extends/temp/BIMplatform.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.left_class {
+  background: url("../../../src/assets/extends/bim/frame_left.png");
+  background-size: 100% 100%;
+  .flex;
+  width: 20vw !important;
+  height: 28.33vw !important;
+  flex-direction: column !important;
+  margin-top: 0.52vw !important;
+  margin-left: 2px !important;
+  /*height:60%;
+  width:15%;
+  margin-top:2%;
+  margin-left:0.1%*/
+
+  & .left_tree {
+    height: auto !important;
+  }
+}
+
+.title {
+  width: 55px;
+  height: 19px;
+  font-size: 18px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.modalClass {
+  /deep/ .ant-modal {
+    .ant-modal-content {
+      background-image: url('../../../src/assets/extends/bim/frame_trajectory.png');
+      background-size: 100% 100%;
+      color: #FFFFFF;
+      background-color: transparent;
+    }
+
+    .ant-modal-header {
+      background-color: transparent;
+
+      .ant-modal-title {
+        color: #FFFFFF;
+      }
+    }
+
+    .ant-modal-close {
+      color: #FFFFFF;
+    }
+
+    .ant-modal-footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+

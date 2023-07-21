@@ -1,0 +1,50 @@
+@import '../../styles/public.module.less';
+@import (reference) "../../styles/theme.less";
+.model-code-tree-modal{
+  .flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  & div[class=ant-modal-body] {
+    padding-top: @spacing-base;
+    min-height: 600px;
+    .flex;
+    .flex-column;
+  }
+  .model-table-tree {
+    width: 100%;
+    margin-right: auto;
+    flex: 1;
+  }
+}
+.heightLight {
+  color: #0b8ef5;
+}
+
+.modelTreeMain {
+
+}
+
+.SyncVisualTable-module_container_2cEMv,.SyncVisualTable-module_container_26Y5n{
+  > article {
+    overflow-y: hidden !important;
+  }
+}
+.searchInput {
+  width: 360px;
+  //margin-bottom: 10px;
+
+  & button {
+    width: 36px;
+    padding: 0;
+  }
+
+  & i[class~=anticon-search] {
+    transform: scale(1.5);
+  }
+}
+
+.export {
+  margin-right: @spacing-base !important;
+}

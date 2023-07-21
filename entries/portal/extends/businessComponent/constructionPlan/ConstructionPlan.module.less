@@ -1,0 +1,333 @@
+@import (reference) "../../styles/theme.less";
+
+.main{
+  .flex;
+  flex:1;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navTitle{
+  .flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 16px;
+  &>span{
+    font-size: 14px;
+    font-family: Source Han Sans CN,serif;
+    font-weight: 400;
+    color: #0A0A0A;
+  }
+  &>button:first-of-type{
+    margin-left: auto;
+    margin-right: 8px;
+  }
+  &>button:last-of-type{
+    margin-left: 8px;
+    margin-right: 0;
+  }
+}
+
+.ganttPanel{
+  .flex;
+  flex:1;
+  align-items: center;
+  flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  overflow: hidden;
+  box-shadow: 0 0 7px 0 rgba(0, 72, 152, 0.1);
+  &>nav{
+    .flex;
+    align-items: center;
+    width: 100%;
+    height: 42px;
+    background: #F8FBFF;
+    border-bottom: 1px solid #E8E8E8;
+    &>span{
+      font-size: 14px;
+      font-family: Source Han Sans CN,serif;
+      font-weight: 400;
+      color: #333333;
+      padding-left: 19px;
+    }
+  }
+}
+
+.optionPanel{
+  .flex;
+  align-items: center;
+  height: 66px;
+  width: 100%;
+  padding-left: 13px;
+  padding-right: 13px;
+  &>button{
+    margin-right: 15px;
+  }
+  &>button:last-of-type{
+    margin-right: 57px;
+  }
+  &>span{
+    font-size: 14px;
+    font-family: Source Han Sans CN,serif;
+    font-weight: 400;
+    color: #5F5F5F;
+    margin-right: 16px;
+  }
+  &>div[class~=ant-select]{
+    width: 124px;
+    margin-right: 9px;
+    border: 1px solid #E8E8E8;
+    &>div[role=combobox]{
+      border-radius: 0;
+      border: none;
+    }
+  }
+}
+
+.ganttContainer{
+  .flex;
+  flex:1;
+  flex-direction: column;
+  width: calc(100% - 26px);
+  overflow: hidden;
+  //height: 480px;
+  //border: 1px solid #E8E8E8;
+}
+
+.ganttOptions{
+  .flex;
+  height: 56px;
+  width: 100%;
+  background: #F9FAFC;
+  align-items: center;
+  padding: 0 16px;
+  overflow-x: hidden;
+  border-top: 1px solid #E8E8E8;
+  border-left: 1px solid #E8E8E8;
+  border-right: 1px solid #E8E8E8;
+  &>.ganttOption{
+    margin-right: 31px;
+  }
+  &>.ganttOption:nth-of-type(4){
+    margin-right: 103px;
+  }
+  &>.ganttOption:nth-of-type(6){
+    margin-right: 101px;
+  }
+  &>.ganttOption:nth-of-type(8){
+    margin-right: 101px;
+  }
+}
+
+.ganttOption{
+  .flex;
+  align-items: center;
+  height: 20px;
+  cursor: pointer;
+  &>i{
+    .flex;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    margin-top: -1px;
+    &>img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &>span{
+    font-size: 14px;
+    font-family: Source Han Sans CN,serif;
+    font-weight: 400;
+    color: #333333;
+    margin-left: 9px;
+  }
+}
+
+.ganttType{
+  margin-left: auto !important;
+}
+
+.radioTitle{
+  font-size: 14px;
+  font-family: Source Han Sans CN,serif;
+  font-weight: 400;
+  color: #5F5F5F;
+}
+
+span[aria-role=pointer]{
+  cursor: pointer;
+}
+
+/* WBSTree */
+.wbsTree{
+  & div[role=document]{
+    min-width: 1700px;
+    width: 90%;
+
+    & div[class=ant-modal-body]{
+      height: 800px;
+      .flex;
+
+      & .wbsTreeContent{
+        .flex;
+        flex: 1;
+      }
+    }
+  }
+}
+
+span[aria-role=identifyCell]{
+  display: flex;
+  justify-content: center;
+}
+
+div[aria-role=milestone]{
+  width: 18px;
+  height: 18px;
+  background: url('../../../src/assets/extends/icon/milestone.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+div[aria-role=critical]{
+  width: 18px;
+  height: 18px;
+  background: url('../../../src/assets/extends/icon/critical.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+div[class~=mini-supergrid-cell]{
+  justify-content: center;
+}
+
+//list
+.mainList{
+  .flex;
+  flex-direction: column;
+  flex:1;
+  background-color: #FFF;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.listNav{
+  .flex;
+  height: 60px;
+  align-items: center;
+  align-items: center;
+  margin-bottom: 10px;
+  &>i{
+    .flex;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  &>span{
+    color: rgba(0,0,0,.85);
+    font-size: 16px;
+  }
+  &>button:first-of-type{
+    margin-left: auto;
+  }
+  &>button{
+    margin-right: 10px;
+  }
+  &>button:last-of-type{
+    margin-right: 0;
+  }
+}
+
+.listContainer{
+  .flex;
+  flex-direction: column;
+  flex:1;
+  &>div{
+    height: 100%;
+  }
+}
+
+.listOptC{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  &>span{
+    color:#2970FF;
+    cursor: pointer;
+  }
+}
+
+div[class=ant-table-wrapper]{
+  &>div{
+    height: 100%;
+    &>div{
+      height: 100%;
+      /*&>div{
+        height: 100%;
+      }*/
+    }
+  }
+}
+
+div[class~=ant-table-default]{
+  height: calc(100% - 64px);
+}
+
+.hide{
+  display: none;
+}
+
+.navBack{
+  .flex;
+  height: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.closed{
+  height: 0 !important;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+.expendedBtn{
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.importFailedMsg{
+  .flex;
+  flex-direction: column;
+  max-height: 300px;
+  max-width: 380px;
+  overflow-y: scroll;
+  align-items: baseline;
+}
+
+.testTimeLine{
+  width: 1px;
+  margin-left: -1px;
+  background-color: #0e79ed;
+}
+
+.testTimeLineTitle{
+  display: flex;
+  margin-left: 2px;
+  z-index:100;
+  white-space:nowrap;
+  align-items: center;
+}
+
+.ModelClass {
+  width: 1870px !important;
+  height: 900px;
+  top: 50px;
+  div[class~=ant-modal-content]{
+    height: 900px;
+  }
+  div[class~=ant-modal-body]{
+    height: 91%;
+  }
+}

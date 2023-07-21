@@ -1,0 +1,175 @@
+@import './mixins.less';
+@import './common.less';
+// 常用布局排版
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-auto {
+  flex: 1;
+}
+.flex {
+  display: flex;
+}
+// 垂直布局
+.flex-column {
+  .flex;
+  flex-direction: column;
+}
+// 上下居中
+.flex-center-align {
+  .flex;
+  align-items: center;
+}
+
+.flex-justify-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.divider-vertical {
+  width: 0;
+  height: 100%;
+  border-left: 1px solid #fff;
+}
+
+.text-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  cursor: pointer !important;
+}
+
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.45);
+}
+
+::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  // -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 0;
+  background: #fff;
+}
+
+// 垂直手风琴
+/*
+    * 使用范例：
+    <transition name="collapse">
+        <div class="collapse-item" v-show="x">
+            {{content}}
+        </div>
+    </transition>
+*/
+.collapse-item {
+  overflow: hidden;
+}
+
+.collapse-enter-active {
+  max-height: 10rem;
+  transition: all .35s ease-in;
+}
+
+.collapse-leave-active {
+  max-height: 10rem;
+  transition: all .35s ease-out;
+}
+
+.collapse-enter {
+  max-height: 0;
+}
+
+.collapse-leave-to {
+  max-height: 0;
+}
+
+// 淡入淡出
+.fade-enter-active {
+  margin-left: -100%;
+  transition: all .25s ease-in;
+}
+
+.fade-leave-active {
+  margin-right: -100%;
+  transition: all .25s ease-in;
+}
+
+.h3-input-number {
+  border: none !important;
+  border-radius: 0 !important;
+
+  &-steps {
+    display: none !important;
+  }
+
+  &>input {
+    padding: 0 !important;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+// 字体颜色
+@font-color: #000000;
+@font-color-weight:#0B1017;
+@font-color-base: #FFFFFF;
+
+// 间距大小
+@spacing-base: 16;
+@spacing-medium: 24;
+@spacing-large: 36;
+
+// 字体大小
+@font-size-small: 26;
+@font-size-medium: 30;
+@font-size-large: 36;
+
+.base-load-more {
+  .inner {
+    position: relative;
+
+    .scroll-load {
+      position: absolute;
+      font-size: 12px;
+      color: grey;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      .px2rem(top, 40)
+    }
+  }
+}

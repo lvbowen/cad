@@ -1,0 +1,27 @@
+@import '../../styles/public.module.less';
+.tabs {
+  span{
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+  span:last-child {
+    margin-left: @spacing-large;
+  }
+  .tab-active {
+    color: @base-color;
+    cursor: pointer;
+  }
+}
+
+.pic {
+  display: block;
+}
+
+.pass {
+  color: @success-color;
+}
+.no-pass {
+  color: @error-color;
+}

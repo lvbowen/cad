@@ -1,0 +1,68 @@
+.productionTaskListWrap{
+  padding: 10px;
+  height: 100%;
+  overflow: hidden;
+}
+.buttonLinks {
+  margin-bottom: 20px;
+  .buttonLink{
+    display: inline-block;
+    line-height: 40px;
+    font-size: 16px;
+    font-family: "Source Han Sans CN";
+    color: #B1B1B1;
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: 36px;
+    }
+  }
+  .active{
+    color: #666666;
+    border-bottom: 3px solid #3293FF;
+  }
+}
+.buttonLink:not(:last-child) {
+  margin-right: 10px;
+}
+
+.productionTaskListContent{
+  padding-right: 30px;
+  height: calc(100% - 52px);
+  width: calc(100% + 30px);
+  overflow-y: auto;
+}
+/deep/.modalWrap{
+
+    .ant-modal-header{
+      border-bottom:unset;
+      border-bottom-width: 0;
+    }
+    .ant-modal-footer{
+      border-top:unset;
+    }
+}
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+/deep/.ant-form-item{
+  margin-bottom:0;
+}

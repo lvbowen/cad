@@ -1,0 +1,221 @@
+.empty{
+  text-align: center;
+}
+.main{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  padding: 0 1.9271vw 2.1875vw 1.9271vw;
+}
+.titleCard{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:space-between;
+  height: 4.375vw;
+  margin-bottom: 1.1458vw;
+  .card{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 16.5625vw;
+    height: 4.375vw;
+    background: url(./img/data_bg.png) no-repeat;
+    background-size: 100% 100%;
+    img{
+      width: 3.3333vw;
+      height: 3.3333vw;
+      margin-top: 0.7813vw;
+      margin-left: 2.6042vw;
+      
+    }
+    /deep/.ant-statistic{
+      margin-top: 0.8854vw;
+      margin-left: 7.8125vw-2.6042vw-3.3333vw;
+    }
+  }
+}
+.charts{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content:space-between;
+  height: 17.7083vw;
+  margin-bottom: 1.0938vw;
+  .leftCharts,.rightChart{
+    height: 100%;
+  }
+  .leftCharts{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 46.9792vw;
+    background: url("./img/k1_aqfx.png") no-repeat;
+    .circleEcharts{
+      flex: 1;
+      display: flex;
+      flex-flow: row nowrap;
+      .circleEchart{
+        flex: 1;
+        background: url("./yuan.png") no-repeat center;
+        background-size: 60%
+      }
+    }
+  }
+  .rightChart{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:space-between;
+    background: url("./img/k2_wttj.png") no-repeat;
+    width: 48.0208vw;
+    .lineChart{
+      flex: 1;
+    }
+  }
+}
+.contentTable{
+  display: flex;
+  flex-flow: column nowrap;
+  height: 21.875vw;
+  background: url("./img/k3_zgqd.png") no-repeat;
+  background-size: 100% 100%;
+  .tableBody{
+    position: relative;
+    margin-top: 1.0417vw;
+    padding-left: 1.5625vw;
+    padding-right: 1.5625vw;
+    
+  }
+}
+.gennerl_title{
+  width: 16.9792vw;
+  margin-top: 0.9896vw;
+  margin-left: 0.9375vw;
+  height: 1.4583vw;
+  background: url(./img/title_bg.png) no-repeat ;
+  background-size: 100% 100%;
+  h4{
+    font-size: 18px;
+    font-family: Source Han Sans CN;
+    color: #FFFFFF;
+    line-height: 0.9896vw;
+    padding-left: 1.7708vw;
+  }
+}
+.tableIndex{
+  display: inline-block;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: #3aa1fb;
+  line-height: 24px;
+  padding: 0 1px;
+}
+.backgroundColor1st{
+  background-color: #f60511;
+}
+.backgroundColor2nd{
+  background-color: #ff5e18;
+}
+.backgroundColor3th{
+  background-color: #fbbb0b;
+}
+.search{
+  position: absolute;
+  top: -2.4479vw;
+  right: 15.9688vw;
+  width: 9.4792vw;
+  height: 1.5104vw;
+  line-height: 2;
+  background: url('./img/k3_combo_s.png') no-repeat;
+  background-size: 100% 100%;
+}
+/deep/.ant-input{
+  background-color: transparent;
+  border: none;
+  color: #d1d5db;
+  &::placeholder{
+    color: #6a778b;
+  }
+  &:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+/deep/.ant-input-search-icon,/deep/.ant-calendar-picker-icon{
+  color: #b6b8bd;
+}
+.timeSelect{
+  position: absolute;
+  top: -2.2479vw;
+  right: 2.0313vw;
+  .timeInput{
+    width: 4.2188vw;
+    height: 27px;
+    background: url("./img/k3_combo_h.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  .anticon-minus{
+    padding-left: 0.2604vw;
+    padding-right: 0.2604vw;
+    color: #0270d9;
+    vertical-align: text-bottom;
+  }
+}
+
+/deep/ .ant-table {
+  border: 0;
+}
+/deep/ .ant-table-tbody > tr:hover > td {
+  background: #558fab !important
+}
+
+/deep/ .ant-table-tbody > tr.ant-table-row-selected td {
+  background: transparent;
+  // color: #ffffff;
+}
+
+/deep/ .ant-table-thead > tr > th {
+  //表头背景色
+  background-color: rgba(53, 130, 243, 0.2) !important;
+  padding: 5px 8px !important;
+  overflow-wrap: break-word;
+  border-bottom: 1px solid transparent;
+  color: rgba(248, 245, 245, 0.85);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/deep/ .ant-table-tbody > tr > td {
+  padding: 8px 8px !important;
+  border-bottom: 1px solid transparent;
+  color: #ffffff;
+}
+
+/deep/ .ant-table-fixed-header .ant-table-scroll .ant-table-header {
+  background-color: transparent;
+}
+
+/deep/ .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body {
+  position: relative;
+  background-color: transparent;
+}
+
+/deep/.ant-table-header {
+  min-height: 31px;
+}
+/deep/ .ant-table-placeholder {
+ display: none;
+}
+
+/deep/ .evenRowStyl {
+ background-color: rgba(53, 130, 243, 0.1);
+}
+
+/deep/.ant-calendar-picker > .ant-calendar-picker-input{
+  background: #11417D!important;
+  border-radius: 12px;
+  border: 0;
+}
+
+/deep/ ::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: transparent !important;
+}

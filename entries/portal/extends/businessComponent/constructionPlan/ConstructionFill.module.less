@@ -1,0 +1,332 @@
+@import (reference) "../../../../../modules/@cloudpivot/flow-center/src/components/pc/menu/style/index.less";
+@import (reference) "../../styles/theme.less";
+
+.title() {
+  font-size: 16px;
+  color: #012a67;
+}
+
+.icon() {
+  width: 8px;
+  height: 38px;
+  /*width: 12px;
+  height: 57px;*/
+  &>img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.cardContainer() {
+  .flex;
+  align-items: center;
+  flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  box-shadow: 0 0 7px 0 rgba(0, 72, 152, 0.1);
+  & > nav {
+    .flex;
+    align-items: center;
+    width: 100%;
+    height: 42px;
+    background: #F8FBFF;
+    border-bottom: 1px solid #E8E8E8;
+
+    & > span {
+      font-size: 14px;
+      font-family: Source Han Sans CN, serif;
+      font-weight: 400;
+      color: #333333;
+      padding-left: 19px;
+    }
+  }
+}
+
+.main {
+  .flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+
+.optNav {
+  .flex;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  //background-color: #FFF;
+  padding: 10px;
+
+  & > i {
+    .flex;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  & > span {
+    .title;
+  }
+  &>button:first-of-type{
+    margin-left: auto;
+  }
+  &>button{
+    margin-right: 15px;
+  }
+  &>button:last-of-type{
+    margin-right: 0px;
+  }
+}
+
+/*.logSection{
+  .flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #FFF;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  &>nav{
+    .title;
+    margin-bottom: 10px;
+  }
+}*/
+.logSection {
+  .cardContainer;
+
+  /*&>nav{
+    &>button:first-of-type{
+      margin-left: auto;
+    }
+    &>button{
+      margin-right: 15px;
+    }
+  }*/
+
+  & > .detailContainer {
+    .flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+
+    & .areaItem {
+      align-items: center;
+      height: auto;
+    }
+  }
+}
+
+.row {
+  .flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.formItem {
+  .flex;
+  .standardPadding(10px);
+  align-items: center;
+  width: 20%;
+
+  & > span {
+    width: 80px;
+  }
+
+  & > *:nth-last-child(1) {
+    width: calc(100% - 100px);
+  }
+}
+
+.areaItem {
+  .flex;
+  .standardPadding(10px);
+  width: 100%;
+  height: 150px;
+
+  & > span {
+    width: 100px;
+  }
+
+  & > *:nth-last-child(1) {
+    width: calc(100% - 120px);
+  }
+}
+
+/*.treeSection{
+  .flex;
+  flex-direction: column;
+  flex:1;
+  width: 100%;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 20px;
+  &>nav{
+    .flex;
+    align-items: center;
+    .title;
+    margin-bottom: 10px;
+    &>button:first-of-type{
+      margin-left: auto;
+    }
+    &>button{
+      margin-right: 15px;
+    }
+    &>button:last-of-type{
+      margin-right: 0;
+    }
+  }
+}*/
+.treeSection {
+  .cardContainer;
+  flex: 1;
+  margin-top: 15px;
+
+  & > nav {
+    & > button:first-of-type {
+      margin-left: auto;
+    }
+
+    & > button {
+      margin-right: 15px;
+    }
+
+    & > button:last-of-type {
+      margin-right: 15px;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.treeContainer {
+  //position: absolute;
+  .flex;
+  //flex: 1;
+  transition: all .3s;
+  width: calc(35% - 12px);
+  height: 100%;
+  overflow: auto;
+  padding: 20px;
+  background-color: #FFF;
+  box-shadow: 0 0 7px 0 rgba(0, 72, 152, 0.1);
+
+  & > ul:first-of-type {
+    .flex;
+    width: 100%;
+    max-height: 100%;
+    overflow: auto;
+  }
+}
+
+.detailMain {
+  --tableMaxHeight: 0px;
+  position: relative;
+  .flex;
+  flex: 1;
+  width:100%;
+  overflow: hidden;
+  background-color: #F9FAFE;
+  //max-height: 64.55vh;
+  //overflow: hidden;
+  //padding: 20px;
+  /*&>ul:first-of-type{
+    position: absolute;
+    width: 50%;
+    max-height: calc(100% - 20px);
+    overflow: auto;
+    .flex;
+    background-color: red;
+  }*/
+  //:first-of-type
+  & > div[class~=ant-table-wrapper] {
+    box-shadow: 0 0 7px 0 rgba(0, 72, 152, 0.1);
+    background-color: #FFF;
+    //width: calc(65% - 20px);
+    width: 65%;
+    transition: all .3s;
+    //margin-left: auto;
+    /*margin-right: 20px;
+    margin-top: 20px;*/
+    & thead[class=ant-table-thead]>tr>th{
+      background: #FFF;
+    }
+    & tbody[class=ant-table-tbody]>tr:nth-child(2n+1){
+      background: #F8FAFB;
+    }
+  }
+
+  & div[class=ant-table-body] {
+    max-height: var(--tableMaxHeight) !important;
+    height: var(--tableMaxHeight);
+  }
+}
+
+.optBar{
+  .flex;
+  //align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 12px;
+}
+
+.rightFull {
+  .flex;
+  .icon;
+  margin-top: auto;
+  cursor: pointer;
+  //align-self: center;
+  //margin-top: 19px;
+}
+
+.leftFull {
+  .flex;
+  .icon;
+  margin-bottom: auto;
+  cursor: pointer;
+  //align-self: center;
+  margin-left: auto;
+  //margin-top: -19px;
+}
+
+.fullContainer{
+  width: calc(100% - 12px) !important;
+}
+
+.zeroContainer{
+  width: 0px !important;
+  padding: 0px !important;
+  //display: none;
+  &>*{
+    display: none;
+  }
+}
+
+.batchFill{
+  .flex;
+  align-items: center;
+  &>input{
+    width: 150px;
+  }
+  &>span:nth-of-type(2){
+    margin-left: 50px;
+  }
+}
+
+.editable{
+  background: #fff7e5 !important;
+}
+
+.importFailedMsg{
+  .flex;
+  flex-direction: column;
+  max-height: 300px;
+  max-width: 380px;
+  overflow-y: scroll;
+  align-items: baseline;
+}
+

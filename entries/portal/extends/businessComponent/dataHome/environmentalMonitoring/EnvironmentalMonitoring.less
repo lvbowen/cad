@@ -1,0 +1,307 @@
+.loading{
+  /deep/.ant-spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+.container{
+  display: flex;
+  flex-flow: column nowrap!important;
+  // justify-content: space-between;
+  margin: 0 auto;
+  background-color: transparent;
+  // height: 46.25vw!important;
+  width: 96.8458vw!important;
+}
+
+.title{
+  margin: 1.1458vw auto auto 1.0417vw;
+  width: 16.9792vw;
+  background: url("./img/title_bg.png") no-repeat ;
+  background-size: 100% 100%;
+  .titleContent{
+    margin: 0 auto auto 1.7708vw;
+    font: 0.9375vw 'SourceHanSansCN-Regular';
+    color: #fff;
+  }
+}
+.empty{
+  position: relative;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.environmental{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  .weather{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 10.1042vw;
+    min-height: 165px;
+    width: 29.2708vw;
+    background: url("./img/k1_tqsj.png") no-repeat ;
+    background-size: 100% 100%;
+    .weatherContent{
+      text-align: center;
+      &>iframe{
+        width: 100%;
+        height: 80%;
+      }
+    }
+  }
+  .environmentalData{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 10.1042vw;
+    min-height: 165px;
+    width: 65.8333vw;
+    background: url("./img/k2_hjsj.png") no-repeat ;
+    background-size: 100% 100%;
+    .environmentalContents{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      flex: 1;
+      .environmentalcontent{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content:center;
+        align-items: center;
+        min-width: 3.75vw;
+        min-height: 3.8021vw;
+        &>em,
+        &>i{
+          font: 0.8333vw 'SourceHanSansCN-Regular';
+          color: #fff;
+        }
+        &>i{
+          font-size: 0.8vw;
+        }
+      }
+      .environmentalTitle{
+        margin-top: 0.5729vw;
+        text-align: center;
+        font: 0.7292vw 'SourceHanSansCN-Regular';
+        color: #fff;
+      }
+    }
+  }
+}
+
+.charts{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 0.8vw;
+  .airQuality{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 15.1042vw;
+    min-height: 165px;
+    width: 29.2708vw;
+    background: url("./img/k3_kqzl.png") no-repeat ;
+    background-size: 100% 100%;
+    .piechart{
+      flex: 1;
+    }
+  }
+  .trendAnalysis{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 15.1042vw;
+    min-height: 165px;
+    width: 65.8333vw;
+    background: url("./img/k4_qsfx.png") no-repeat ;
+    background-size: 100% 100%;
+    .lineChart{
+      flex: 1;
+      position: relative;
+      .dateSelect{
+        position: absolute;
+        top: -1.0417vw;
+        right: 2.1354vw;
+        width: 121px;
+        height: 27px;
+        line-height: 2;
+        background: url('./img/k4_combo_t.png') no-repeat;
+        background-size: 100% 100%;
+
+      }
+    }
+  }
+}
+
+.historyRecord{
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 0.8vw;
+  background: url("./img/k5_lsjl.png") no-repeat ;
+  background-size: 100% 100%;
+  .dateSelect{
+    position: absolute;
+    top: 0.8vw;
+    right: 2.1354vw;
+    width: 121px;
+    height: 27px;
+    line-height: 2;
+    background: url('./img/k4_combo_t.png') no-repeat;
+    background-size: 100% 100%;
+
+  }
+  .dataTable{
+    flex: 1;
+    margin: 1.0417vw 1.0417vw 1vw;
+  }
+}
+
+/deep/.ant-input{
+  background-color: transparent;
+  border: none;
+  color: #d1d5db;
+  &::placeholder{
+    color: #6a778b;
+  }
+  &:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+/deep/.ant-calendar-picker-icon{
+  color: #b6b8bd;
+}
+/deep/ .evenRowStyl {
+  background-color: rgba(53, 130, 243, 0.1);
+}
+
+/deep/ .ant-table {
+  border: 0;
+  font-size: 0.7292vw;
+}
+/deep/ .ant-table-tbody > tr:hover > td {
+  background: #558fab !important
+}
+
+/deep/ .ant-table-tbody > tr.ant-table-row-selected td {
+  background: transparent;
+  // color: #ffffff;
+}
+
+/deep/ .ant-table-thead > tr > th {
+  //表头背景色
+  background-color: rgba(53, 130, 243, 0.2) !important;
+  padding: 0.2604vw 0.4167vw !important;
+  overflow-wrap: break-word;
+  border-bottom: 1px solid transparent;
+  color: rgba(248, 245, 245, 0.85);
+  font-weight: 400;
+  font-size: 0.6771vw
+}
+
+/deep/ .ant-table-tbody > tr > td {
+  padding: 0.4167vw !important;
+  border-bottom: 0.0521vw solid transparent;
+  color: #ffffff;
+}
+
+/deep/ .ant-table-fixed-header .ant-table-scroll .ant-table-header {
+  background-color: transparent;
+  overflow: hidden !important;
+}
+/deep/.ant-table-hide-scrollbar{
+  margin-bottom: 0!important;
+  padding: 0!important;
+  overflow: hidden !important;
+  // line-height: 1.7708vw!important;
+}
+
+/deep/.ant-table-placeholder{
+  background: transparent;
+}
+/deep/.ant-empty-description{
+  color: #ccc;
+}
+
+/deep/.ant-table-header{
+  min-height: auto;
+}
+
+/deep/ .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body {
+  position: relative;
+  background-color: transparent;
+}
+
+  //表格分页
+  /deep/ .ant-pagination-item-active {
+    background: transparent;
+    color: white;
+    border-color: #2970ff;
+  }
+
+  /deep/ .ant-pagination-item {
+    color: #ffffff !important;
+    background-color: transparent;
+    border: 1px solid #d9d9d9;
+  }
+
+  /deep/ .ant-table-pagination.ant-pagination {
+    float: right;
+    margin: 1px !important;
+  }
+
+  //表格页码-数字
+  /deep/ .ant-pagination-item a {
+    color: #ffffff;
+  }
+
+  //表格页码-数字-点击
+  /deep/ .ant-pagination-item-active a {
+    color: #2970ff;
+  }
+
+  //表格页码向前向后跳转
+  /deep/ .ant-pagination-item-link {
+    color: #ffffff;
+    background-color: transparent;
+    .anticon-double-right,
+    .anticon-double-left
+    {
+      color: #2970ff;
+    }
+  }
+
+  /deep/ .ant-pagination-item-ellipsis {
+    color: #ffffff !important;
+  }
+
+/deep/ ::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #082434;
+}
+/deep/::-webkit-scrollbar-thumb {
+  background-color: #02e5fd;
+  
+}
+
+.backgroundB{
+  background: url("./img/k2_b.png") no-repeat ;
+  background-size: 100% 100%;
+}
+.backgroundG{
+  background: url("./img/k2_g.png") no-repeat ;
+  background-size: 100% 100%;
+}
+.backgroundY{
+  background: url("./img/k2_y.png") no-repeat ;
+  background-size: 100% 100%;
+}
+
+

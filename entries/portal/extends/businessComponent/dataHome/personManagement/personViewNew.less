@@ -1,0 +1,306 @@
+.container{
+  display: flex;
+  flex-flow: row nowrap !important;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  // padding: 0 1.9271vw 2.1875vw 1.9271vw;
+  .leftContainer {
+    background:url(./img/k1_zzjg.png) no-repeat;
+    background-size: 100% 100%;
+    width:28.2708vw;
+    height: 46.25vw;
+    /deep/ .ant-tree {
+      margin-top: 0.5vw;
+      margin-left: 1.1167vw;
+      color: #fff;
+    }
+    /deep/ .ant-table-wrapper {
+      padding: 20px;
+    }
+    /deep/ .ant-table-row-expand-icon {
+      color: #2970ff !important;
+    }
+    /deep/ .ant-tree li .ant-tree-node-content-wrapper {
+      color: #fff;
+    }
+
+    /deep/ .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+      background-color: #00C6FB;
+    }
+
+    /deep/ .ant-tree li .ant-tree-node-content-wrapper:hover {
+      background-color: #00C6FB;
+    }
+  }
+  .rightContainer{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 68.7813vw;
+    height: 46.25vw;
+    .mainContainer{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      margin-bottom: 1.1979vw;
+      &>div{
+        display: flex;
+        flex-flow: row nowrap;
+        width: 16.5625vw;
+        height: 4.375vw;
+        background: url(./img/data_bg.png) no-repeat;
+        background-size: 100% 100%;
+        img{
+          width: 3.3333vw;
+          height: 3.3333vw;
+          margin-top: 0.7813vw;
+          margin-left: 2.6042vw;
+
+        }
+        /deep/.ant-statistic{
+          margin-top: 0.8854vw;
+          margin-left: 7.8125vw-2.6042vw-3.3333vw;
+        }
+      }
+    }
+    .inContainer{
+      height: 17.7083vw;
+      background:url(./img/k2_jctj.png) no-repeat;
+      background-size: 100% 100%;
+      margin-bottom: 1.0417vw;
+      /deep/ .ant-table {
+        margin: 1.25vw 1.875vw 0 1.875vw;
+      }
+    }
+    .inOutContainer{
+      height: 40.875vw;
+      background:url(./img/k3_jtc.png) no-repeat;
+      background-size: 100% 100%;
+      .contentContainer{
+        display: flex;
+        flex-flow: row nowrap;
+        padding-left: 1.5625vw;
+        padding-right: 1.5625vw;
+        .inOutTable{
+          position: relative;
+          width: 54.7396vw;
+          height: 16.4063vw;
+          margin-top: 0.9375vw;
+        }
+        .inOut{
+          width: 16.5625vw;
+          height: 17vw;
+          padding-left: 1.0417vw;
+          .inOutTitle{
+            margin-top: -19px;
+            margin-right: 15.4167vw;
+            margin-bottom: 0.8333vw;
+            width: 100%;
+            font-family: SourceHanSansCN-Regular;
+            font-size: 0.7292vw
+          }
+          .inOutContents{
+            height: 100%;
+            width: 100%;
+            overflow-y: scroll;
+          }
+          .inOutContent{
+            // width: 16.5625vw;
+            border: 1px dotted #172e45;
+            margin-bottom: 0.3125vw;
+            img{
+              padding-left: 0.7292vw;
+            }
+            img,span{
+              padding-right: 0.7292vw;
+            }
+            .inOutContentStatus{
+              color:#FFFFFF4D;
+              padding-left: 24px;
+            }
+            &>span:last-child{
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .gennerl_title{
+    width: 16.9792vw;
+    margin-top: 0.9896vw;
+    margin-left: 0.9375vw;
+    height: 1.4583vw;
+    background: url(./img/title_bg.png) no-repeat ;
+    background-size: 100% 100%;
+    h4{
+      font-size: 18px;
+      font-family: Source Han Sans CN;
+      color: #FFFFFF;
+      line-height: 0.9896vw;
+      padding-left: 1.7708vw;
+    }
+  }
+  .tableIndex{
+    display: inline-block;
+    min-width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    background-color: #3aa1fb;
+    line-height: 24px;
+    padding: 0 1px;
+  }
+  .backgroundColor1st{
+    background-color: #f60511;
+  }
+  .backgroundColor2nd{
+    background-color: #ff5e18;
+  }
+  .backgroundColor3th{
+    background-color: #fbbb0b;
+  }
+  .search{
+    position: absolute;
+    top: -2.3958vw;
+    right: 8.1771vw;
+    width: 9.4792vw;
+    height: 1.5104vw;
+    line-height: 2;
+    background: url('./img/k3_combo_s.png') no-repeat;
+    background-size: 100% 100%;
+  }
+  .dateSelect{
+    position: absolute;
+    top: -2.3958vw;
+    right: 0.2604vw;
+    width: 6.3542vw;
+    height: 1.5104vw;
+    line-height: 2;
+    background: url('./img/k3_combo_t.png') no-repeat;
+    background-size: 100% 100%;
+  }
+  /deep/.ant-input{
+    background-color: transparent;
+    border: none;
+    color: #d1d5db;
+    &::placeholder{
+      color: #6a778b;
+    }
+    &:focus{
+      outline: none;
+      border: none;
+      box-shadow: none;
+    }
+  }
+  /deep/.ant-input-search-icon,/deep/.ant-calendar-picker-icon{
+    color: #b6b8bd;
+  }
+
+  /deep/ .ant-table {
+    border: 0;
+  }
+  /deep/ .ant-table-row {
+    cursor: pointer;
+  }
+  /deep/ .ant-table-tbody > tr:hover > td {
+    background: #558fab !important
+  }
+
+  /deep/ .ant-table-tbody > tr.ant-table-row-selected td {
+    background: transparent;
+    // color: #ffffff;
+  }
+
+  /deep/ .ant-table-thead > tr > th {
+    //表头背景色
+    background-color: rgba(53, 130, 243, 0.2) !important;
+    padding: 5px 8px !important;
+    overflow-wrap: break-word;
+    border-bottom: 1px solid transparent;
+    color: rgba(248, 245, 245, 0.85);
+    font-weight: 400;
+    font-size: 13px;
+  }
+
+  /deep/ .ant-table-tbody > tr > td {
+    padding: 8px 8px !important;
+    border-bottom: 1px solid transparent;
+    color: #ffffff;
+  }
+
+  /deep/ .ant-table-fixed-header .ant-table-scroll .ant-table-header {
+    background-color: transparent;
+    margin-bottom: 0 !important;
+  }
+
+  /deep/ .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body {
+    position: relative;
+    background-color: transparent;
+  }
+
+  //表格分页
+  /deep/ .ant-pagination-item-active {
+    background: transparent;
+    color: white;
+    border-color: #2970ff;
+  }
+
+  /deep/ .ant-pagination-item {
+    color: #ffffff !important;
+    background-color: transparent;
+    border: 1px solid #d9d9d9;
+  }
+
+  /deep/ .ant-table-pagination.ant-pagination {
+    float: right;
+    margin: 1px !important;
+  }
+
+  //表格页码-数字
+  /deep/ .ant-pagination-item a {
+    color: #ffffff;
+  }
+
+  //表格页码-数字-点击
+  /deep/ .ant-pagination-item-active a {
+    color: #2970ff;
+  }
+
+  //表格页码向前向后跳转
+  /deep/ .ant-pagination-item-link {
+    color: #ffffff;
+    background-color: transparent;
+  }
+
+  /deep/ .ant-pagination-item-ellipsis {
+    color: #ffffff;
+  }
+
+  /deep/.ant-table-header {
+    min-height: 31px;
+  }
+  /deep/ .ant-table-placeholder {
+    display: none;
+  }
+
+  /deep/ .evenRowStyl {
+    background-color: rgba(53, 130, 243, 0.1);
+  }
+  /deep/ .highTree {
+    background: rgba(53, 130, 243, 0.3);
+  }
+}
+
+/deep/ ::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: transparent !important;
+}
+.empty{
+  text-align: center;
+}
+/deep/.ant-table-row-cell-break-word{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

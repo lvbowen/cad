@@ -1,0 +1,237 @@
+@import (reference) "../../../../../modules/@cloudpivot/flow-center/src/components/pc/menu/style/index.less";
+@import (reference) "../../styles/theme.less";
+
+.leftTable(){
+  .standard(10px);
+  margin-top: 5px;
+  //flex: 1;
+  flex-direction: column;
+  //padding-bottom: 10px;
+
+  & tr th {
+    & div[class=cell] {
+      text-align: center;
+      .textEllipsis;
+    }
+  }
+
+  & td {
+    padding: 4px 20px 4px 0 !important;
+    //padding-right: 20px !important;
+    & div[class=cell] {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      .textEllipsis;
+      & >div{
+        //display: inline-block;
+        display: inline;
+        vertical-align: middle;
+        .textEllipsis;
+      }
+    }
+  }
+  & tr td:nth-child(2){
+    &>div{
+      padding-left: 10px;
+    }
+  }
+}
+
+.mainTable() {
+  .flex;
+  margin-top: 10px;
+  flex-direction: column;
+  --customTableHeaderH: 53px;
+  --customTablePaginationH: 53px;
+
+  & > nav:first-child {
+    .flex;
+    flex-direction: column;
+    height: 70px;
+    font-size: 16px;
+    color: #012a67;
+    //margin: 5px 10px;
+
+    &>aside{
+      margin-top: 5px;
+      .flex;
+      &>button{
+        margin-right: 10px;
+      }
+    }
+  }
+
+  & > .table {
+    .standard(10px);
+  }
+
+  .standard(10px);
+  margin-top: 5px;
+  flex: 1;
+  flex-direction: column;
+
+  & tr th {
+    & div[class=cell] {
+      text-align: center;
+      .textEllipsis;
+      &>div{
+        .textEllipsis;
+      }
+    }
+  }
+
+  & tr td{
+    & div[class=cell]{
+      padding-left: 0 !important;
+      &>div{
+        .textEllipsis;
+        &>span{
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+
+  & td {
+      padding: 0;
+
+      & div[class=cell] {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        .flex;
+        align-items: center;
+        justify-content: center;
+
+        & > div {
+          margin: auto;
+        }
+      }
+    }
+
+  .cell {
+    text-align: center;
+    background-color: red;
+  }
+
+  .bodyCell {
+    height: var(--customTableHeaderH);
+    .textEllipsis;
+
+    & > div {
+      text-align: center;
+      .textEllipsis;
+    }
+  }
+
+  .checkCell {
+    .flex;
+    height: var(--customTableHeaderH);
+
+    & div[class=cell] {
+      .flex;
+      .standard(auto);
+    }
+
+    & label {
+      .standard(auto);
+    }
+  }
+
+  .tdInput {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tdCell {
+    .flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    & > * {
+      .standard(auto);
+    }
+  }
+}
+
+
+.main{
+  .flex;
+  width: 100%;
+  user-select: none;
+}
+
+.tableContent{
+  width: 520px;
+  overflow: auto;
+  .leftTable;
+}
+
+.tableContentRight{
+  width: 700px;
+  flex-direction: column;
+  // overflow: auto;
+  flex:1;
+  .mainTable;
+}
+
+.tempRow{
+  background-color: #FDF5E6 !important;
+}
+
+.show {
+  .flex;
+}
+
+.hide {
+  display: none;
+}
+
+.dragLine{
+  .flex;
+  margin: auto;
+  border: 1px;
+  width: 6px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  cursor: col-resize;
+}
+
+.out{
+
+  opacity: 1;
+}
+
+.in{
+  opacity: 0;
+}
+
+.batchOperation{
+  transition: all .3s;
+  .flex;
+  align-items: center;
+
+  &>span{
+    margin-left: 10px;
+  }
+
+  & input[class=ant-input]{
+    width: 120px;
+  }
+
+  & button:last-child{
+    margin-left: 20px;
+  }
+  
+}
+.tableContentRight {
+  input[class=el-input__inner ] {
+    height: 33px;
+    line-height: 33px;
+  }
+}
+

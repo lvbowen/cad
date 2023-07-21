@@ -1,0 +1,15 @@
+{
+  "name": "@ctesi/component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {},
+  "devDependencies": {
+    "vue-tsx-support": "^3.0.2"
+  },
+  "peerDependencies": {
+    "vue-property-decorator": "9.1.2",
+    "vue-tsx-support": "^3.0.2",
+    "@ctesi/core": "1.0.0"
+  }
+}

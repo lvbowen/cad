@@ -1,0 +1,41 @@
+.h3-radio-button{
+  display: flex;
+  font-size: 12px;
+  height: 28px;
+  border-radius: 14px;
+  border:1px solid rgba(212,215,224,1);
+  &__item{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    border-right: 1px solid rgba(212,215,224,1);
+  }
+  &__item:last-child {
+    border-right: none;
+    border-top-right-radius:14px;
+    border-bottom-right-radius:14px;
+  }
+  &__item:first-child {
+    border-top-left-radius:14px;
+    border-bottom-left-radius:14px;
+  }
+  &__label {
+    position: relative;
+  }
+  &__tip {
+    display: block;
+    position: absolute;
+    right: -3px;
+    top: 0;
+    width:6px;
+    height:6px;
+    background:#FF3640;
+    border-radius: 50%;
+  }
+  &__item.active {
+    background:#F3F5F8;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,67 @@
+.h3-chart-panel{
+
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  &__header{
+    padding: 0 8px 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    &-left {
+      display: flex;
+    }
+    &-right {
+
+    }
+  }
+  &__new {
+    padding-left: 8px;
+  }
+  &__body{
+    display: flex;
+    flex-direction: column;
+    height: 296px;
+    padding: 0 16px;
+  }
+  &__footer{
+    // 9.27 在chart内加了12px后，统计分析下方也需要减去12px
+    height:32px;
+    // height: 44px;
+    // line-height: 44px;
+    display: flex;
+    font-size:12px;
+    color: #777F8D;
+    span ~ span {
+      padding-left: 16px;
+    }
+  }
+  &__toolbar-line{
+    width: 1px;
+    height: 16px;
+    background: rgba(227,230,236,1);
+    display: inline-block;
+    text-align: center;
+    margin: 2px 12px 0  12px;
+  }
+  &__icon-wrap {
+    min-width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+      background: #ECF0F6;
+      border-radius: 50%;
+      transition: all .3s;
+    }
+  }
+  &__drag-wrap {
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    font-size:13px;
+    color: #777F8D;
+  }
+}

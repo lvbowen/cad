@@ -1,0 +1,80 @@
+@import (reference) "../../../styles/theme.less";
+
+
+.main {
+  .flex;
+  flex-direction: column;
+
+  & > nav {
+    .flex;
+    align-items: center;
+    height: 56px;
+    padding: 10px 25px;
+    border-bottom: 2px solid #F3F6FA;
+    &>span{
+      font-size: 22px;
+      font-family: Microsoft YaHei;
+      font-weight: bold;
+      color: #333333;
+    }
+    & > .tabs {
+      .flex;
+      align-items: center;
+      margin-left: auto;
+      & .navTab{
+        .flex;
+        align-items: center;
+        margin-left: 15px;
+        background-color: #E1EEF9;
+        border-radius: 18px;
+        padding: 10px 15px;
+        width: 94px;
+        height: 36px;
+        cursor: pointer;
+        transition: all .3s;
+        .textEllipsis;
+        &>span{
+          font-size: 16px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: #82ABD0;
+        }
+      }
+    }
+  }
+}
+
+.navTab[data-active=true]{
+  background-color: #1584FF !important;
+  &>span{
+    color:#FFF !important;
+  }
+}
+
+.tableHeader(){
+  font-size: 16px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: #333333;
+}
+
+div[class~=ant-table-small]{
+  border:none;
+}
+
+.noTableHead{
+  & div[class=ant-table-body]{
+    & thead>tr{
+      height: 0px;
+    }
+  }
+}
+
+div[class=ant-table-body]{
+  & thead>tr{
+    height: 76px;
+    & span{
+      .tableHeader;
+    }
+  }
+}

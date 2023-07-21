@@ -1,0 +1,89 @@
+@import (reference) "../../../../../modules/@cloudpivot/flow-center/src/components/pc/menu/style/index.less";
+@import (reference) "../../styles/theme.less";
+
+.main{
+
+}
+
+/*.tableContent{
+  .flex;
+  flex:1;
+  flex-direction: column;
+  height: 100%;
+}*/
+
+.tableContent {
+  --customTableHeaderH: 53px;
+  --customTablePaginationH:53px;
+  .standard(10px);
+  .flex;
+  flex:1;
+  flex-direction: column;
+  height: 100%;
+  & td{
+    padding: 0 !important;
+    & div[class=cell]{
+      width: 100%;
+      height: 100%;
+      padding: 0 !important;
+      .flex;
+      align-items: center;
+    }
+  }
+
+  .cell {
+    text-align: center;
+    background-color: red;
+  }
+
+  .bodyCell {
+    height: var(--customTableHeaderH);
+    .textEllipsis;
+
+    & > div {
+      text-align: center;
+      .textEllipsis;
+    }
+  }
+
+  .checkCell {
+    .flex;
+    height: var(--customTableHeaderH);
+
+    & div[class=cell] {
+      .flex;
+      .standard(auto);
+    }
+
+    & label {
+      .standard(auto);
+    }
+  }
+
+  .pagination{
+    .flex;
+    margin-top: auto;
+    justify-content: flex-end;
+    align-items: center;
+    height: var(--customTablePaginationH);
+    & span[class=el-pagination__jump]{
+      .flex;
+    }
+  }
+
+  .tdInput{
+    width: 100%;
+    height: 100%;
+  }
+
+  .tdCell{
+    .flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    &>*{
+      .standard(auto);
+    }
+  }
+}
+

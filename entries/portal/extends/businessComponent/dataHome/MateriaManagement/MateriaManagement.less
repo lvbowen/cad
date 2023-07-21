@@ -1,0 +1,199 @@
+.main{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  padding: 0 1.9271vw 2.1875vw 1.9271vw;
+  display: flex;
+  flex-flow: column nowrap !important;
+  .select {
+    display: flex;
+    margin-bottom: 10px;
+    p {
+      line-height: 25px;
+      color: #fff;
+    }
+    :nth-child(3) {
+      margin-right: 20px;
+    }
+  }
+  .top{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 19.4792vw;
+    margin-bottom: 1.0417vw;
+    .planning{
+      width: 46.3542vw;
+      background: url(./img/k2_czwc.png) no-repeat ;
+      background-size: 100% 100%;
+      display: flex;
+      flex-direction: column;
+      .seletType{
+        display: flex;
+        flex-flow: row nowrap;
+        flex: 1;
+        overflow: auto;
+        .lists {
+          padding: 10px;
+          padding-left: 20px;
+          width: 35%;
+          height: 95%;
+          .listData {
+            padding: 0 30px;
+            width: 100%;
+            height: 40px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            cursor: pointer;
+            img {
+              position: absolute;
+              top: 0;
+              left: 5px;
+            }
+            p {
+              font-size: 14px;
+              font-family: Microsoft YaHei;
+              font-weight: 400;
+              color: #c3eaff;
+              line-height: 47px;
+            }
+            div {
+              line-height: 46px;
+            }
+            div :nth-child(1) {
+              font-size: 20px;
+              font-family: MF LiHei;
+              font-weight: bold;
+              font-style: italic;
+              color: #ffffff;
+              margin-right: 10px;
+            }
+            div :nth-child(2) {
+              font-size: 13px;
+              font-family: Microsoft YaHei;
+              font-weight: 400;
+              color: #03eba1;
+            }
+          }
+        }
+        .piecharts{
+          flex: 1;
+        }
+      }
+    }
+    .statistics{
+      width: 47.9167vw;
+      background: url(./img/k2_czwc.png) no-repeat ;
+      background-size: 100% 100%;
+      .barEchart{
+        width: 100%;
+        height: 95%;
+      }
+    }
+
+  }
+  .bottom{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 19.7396vw;
+    background: url(./img/k4_cpfx.png) no-repeat ;
+    background-size: 100% 100%;
+    .eltable{
+      // padding: 1.0417vw;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .search {
+      text-align: right;
+    }
+    /deep/.el-input {
+      width: 15%;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.gennerl_title{
+  width: 16.9792vw;
+  margin-top: 0.9896vw;
+  margin-left: 0.9375vw;
+  height: 1.4583vw;
+  background: url(./img/title_bg.png) no-repeat ;
+  background-size: 100% 100%;
+  h4{
+    font-size: 18px;
+    font-family: Source Han Sans CN;
+    color: #FFFFFF;
+    line-height: 0.9896vw;
+    padding-left: 1.7708vw;
+  }
+}
+
+/deep/.el-input__inner {
+  height: 28px;
+  line-height: 28px;
+  background: rgba(17, 65, 125, 0.72);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+}
+/deep/.el-input__icon {
+  height: 28px;
+  line-height: 26px;
+  color: #fff;
+}
+/deep/.el-button {
+  padding: 5px 15px;
+  border: none;
+}
+/deep/.el-scrollbar__wrap {
+  overflow-x: hidden;
+}
+
+/deep/.el-table {
+  color: #fff;
+  background-color: rgba(53, 130, 243, 0.1); // transparent;
+  border: 1px solid rgba(119, 171, 210, 1);
+}
+/deep/.el-table th {
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid #5073a1;
+  background: rgba(53, 130, 243, 0.2);
+  font-weight: 800;
+  font-size: 14px;
+  text-align: center;
+}
+/deep/.el-table tr,
+/deep/.el-table td {
+  font-size: 13px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid #5073a1;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+}
+/deep/.el-table--striped .el-table__body tr.el-table__row--striped td {
+  background: rgba(53, 130, 243, 0.2);
+}
+/deep/.el-table .warning-row {
+  background: rgba(234, 237, 243, 0.1);
+}
+/deep/.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background: rgba(233, 237, 243, 0.3) !important;
+}
+
+/deep/ .el-date-editor {
+  .el-range-input {
+    background-color: transparent;
+    color: white;
+  }
+  .el-range-separator {
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+}

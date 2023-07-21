@@ -1,0 +1,43 @@
+
+.ant-table-thead>tr>th,
+.ant-table-tbody>tr>td {
+  padding: 8px;
+}
+
+.clickRowStyl {
+  background-color:  #bcf5f6;
+}
+.evenRowStyl {
+  background-color: #aad4fd46 !important;
+}
+
+.ant-table-tbody>.clickRowStyl:hover>td {
+  background-color: #bcf5f6;
+}
+
+.ant-table-tbody>tr:hover:not(.ant-table-expanded-row)>td {
+  background: #bcf5f6;
+}
+
+.ant-table-tbody>tr:hover>td {
+  background: #bcf5f6 !important
+}
+
+:global thead tr .column-class {
+  font-size: 14px !important;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 10px 10px;
+}
+
+.redRow {
+  background-color: #f3c6c6;
+}
+
+.greenRow {
+  background-color: #bff5b0;
+}
+
+.blueRow {
+  background-color: #80f1cd;
+}

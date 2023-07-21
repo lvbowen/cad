@@ -1,0 +1,252 @@
+// 间距大小
+@spacing-base: 8px;
+@spacing-medium: 16px;
+@spacing-large: 24px;
+// 颜色
+@base-color: #0E90FE;
+@success-color: #67C23A;
+@warning-color: #E6A23C;
+@cancel-color: #909399;
+@error-color: #DE1037;
+@danger-color-p: #9932CC;
+// 全局的共用样式类
+.overflow-hidden {
+  overflow: hidden;
+}
+
+// 拉伸铺满背景样式
+.background-full(@url) {
+  background:url(@url) 0 0/100% 100% no-repeat;
+}
+
+.bg-full {
+  //background-image: url(@url);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.height(@height) {
+  height: @height;
+}
+
+// 常用布局排版
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+// 滚动条默认样式定制
+.scrollbar-default {
+  &::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #99a9bf;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-track-piece {
+    background: transparent;
+    border-radius: 10px;
+  }
+}
+// inline-block
+.inline-block {
+  display: inline-block;
+}
+// flex 布局
+.flex {
+  display: flex;
+}
+
+.flow-root {
+  display: flow-root;
+}
+// 上下居下，左右居右
+.flex-end {
+  .flex-end-align;
+  .flex-end-justify;
+  justify-content: flex-end;
+}
+
+// 上下居下，左右居中
+.flex-end-justify {
+  .flex;
+  .flex-center-justify;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+// 上下居上，左右居中
+.flex-start-justify {
+  .flex;
+  .flex-center-justify;
+  align-items: flex-start;
+  align-content: flex-end;
+}
+
+// 左右居右，上下居中
+.flex-end-align {
+  .flex;
+  .flex-center-align;
+  justify-content: flex-end;
+  justify-items: flex-end;
+}
+
+// 上下左右居中
+.flex-center {
+  .flex-center-align;
+  .flex-center-justify;
+}
+
+// 上下居中
+.flex-center-align {
+  .flex;
+  align-items: center;
+}
+
+// 左右居中
+.flex-center-justify {
+  .flex;
+  justify-content: center;
+}
+
+// 左右拉开，上下居中
+.flex-space-between {
+  .flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+// 换行
+.flex-wrap {
+  .flex;
+  flex-wrap: wrap;
+}
+//不换行
+.nowrap {
+  white-space:nowrap
+}
+
+// 垂直布局
+.flex-column {
+  .flex;
+  flex-direction: column;
+}
+
+// 自动撑开
+.flex-1,
+.flex-spacer {
+  flex-grow: 1;
+  .overflow-hidden;
+}
+.flex-auto {
+  flex: 1;
+}
+
+// 不参与弹性布局
+.flex-none {
+  flex: none;
+}
+
+// 文本居中
+.text-center {
+  text-align: center;
+}
+//上下居中
+.line-center {
+  line-height: inherit;
+}
+// 清除浮动
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ' ';
+    clear: both;
+    height: 0;
+  }
+}
+
+.disable {
+  cursor: not-allowed !important;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.base-search-btn {
+  margin: @spacing-base 0;
+  /deep/ .ant-select {
+    min-width: 120px;
+    margin-right: @spacing-base;
+  }
+  /deep/ .ant-input-search {
+    width: 200px;
+  }
+}
+
+//overflow: hidden;
+//white-space: nowrap;
+//text-overflow: ellipsis;
+.btn-click-active {
+  & ::before {
+    position: absolute;
+    content: '';
+    left: -2em;
+    right: -2em;
+    top: -2em;
+    bottom: -2em;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(circle, #ff0081 20%, transparent 0),
+    radial-gradient(circle, #ff0081 20%, transparent 0),
+    radial-gradient(circle, #ff0081 20%, transparent 0),
+    radial-gradient(circle, #ffffff 20%, transparent 0),
+    radial-gradient(circle, #ff0081 20%, transparent 0),
+    radial-gradient(circle, #ff0081 20%, transparent 0),
+    radial-gradient(circle, #ff0081 20%, transparent 0),
+    radial-gradient(circle, #ffffff 20%, transparent 0),
+    radial-gradient(circle, #ff0081 20%, transparent 0),
+    radial-gradient(circle, #ff0081 20%, transparent 0),
+    radial-gradient(circle, #ff0081 20%, transparent 0),
+    radial-gradient(circle, #ffffff 20%, transparent 0),
+    radial-gradient(circle, #ff0081 20%, transparent 0),
+    radial-gradient(circle, #ff0081 20%, transparent 0),
+    radial-gradient(circle, #ff0081 20%, transparent 0),
+    radial-gradient(circle, #ffffff 20%, transparent 0),
+    radial-gradient(circle, #ff0081 20%, transparent 0),
+    radial-gradient(circle, #ff0081 20%, transparent 0),
+    radial-gradient(circle, #ff0081 20%, transparent 0);
+    background-size: 10% 10%, 20% 20%, 15% 15%,25% 25%,10% 10%, 20% 20%, 15% 15%,25% 25%, 20% 20%, 15% 15%, 20% 20%, 15% 15%,25% 25%,10% 10%, 20% 20%, 15% 15%,25% 25%, 20% 20%, 15% 15%;
+    //background-position: 13% 10%, 6% 6%, 22% 2%, 43% -6%, 56% 0%, 72% -9%, 89% -2%, 102% 2%, 105% 36%, 99% 57%, 99% 68%, 93% 84%, 75% 83%, 63% 95%, 44% 79%, 27% 91%, 10% 91%, 6% 54%;
+    transition: .75s background-position ease-in-out,.75s background-size ease-in-out;
+    animation: bubbles ease-in-out .75s forwards;
+  }
+  @keyframes bubbles {
+    0% {
+      background-position: 50% 44%, 50% 44%, 50% 44%,50% 44%, 50% 44%, 50% 44%,50% 44%,50% 44%,50% 44%, 50% 44%, 50% 44%,50% 44%, 50% 44%, 50% 44%,50% 44%,50% 44%,50% 44%,50% 44%;
+    }
+    50% {
+      background-position: 13% 10%, 6% 6%, 22% 2%, 43% -6%, 56% 0%, 72% -9%, 89% -2%, 102% 2%, 105% 36%, 99% 57%, 99% 68%, 93% 84%, 75% 83%, 63% 95%, 44% 79%, 27% 91%, 10% 91%, 6% 54%;
+    }
+    100% {
+      background-position: 13% 10%, 6% 6%, 22% 2%, 43% -6%, 56% 0%, 72% -9%, 89% -2%, 102% 2%, 105% 36%, 99% 57%, 99% 68%, 93% 84%, 75% 83%, 63% 95%, 44% 79%, 27% 91%, 10% 91%, 6% 54%;
+      background-size: 0;
+    }
+  }
+  &:active ::before {
+    animation: none;
+    background-size: 0;
+  }
+}
